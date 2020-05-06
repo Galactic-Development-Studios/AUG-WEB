@@ -1,0 +1,36 @@
+/*Navbar Kit, for all your navigation needs*/ 
+#nav{
+	width: 100vw;
+	height: 20%;
+}
+.navLink{
+	text-decoration: none;
+	color: white;
+}
+.navLinkActive{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+#navItem{
+	display: inline-block;
+	width: 17%;
+	margin-bottom: 30px;
+	transition: 0.5s;
+	padding: 15px;
+}
+#navItem:hover{
+	background-color: gold;
+	color:black;
+}
+#navItemSpecial{
+	display: inline-block;
+	width: 17%;
+	padding: 5px;
+	vertical-align: middle;
+	transition: 0.5s;
+}
+#navItemSpecial:hover{
+	background-color: gold;
+	color: black;
+}

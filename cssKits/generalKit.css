@@ -1,0 +1,83 @@
+/*General Kit, for all general items*/ 
+
+*{
+	padding: 0;
+	margin: 0;
+}
+html{
+	padding: none;
+	overflow-x: hidden;
+	width: 100vw-1;
+	min-height: 100vh;
+	height: auto;
+	color: white;
+}
+body{
+background-color: black;
+padding:none;
+width: 100%;
+height: auto;
+min-height: 100%;
+background-color: black;
+background-repeat: none;
+background-position: center;
+background-size: cover;
+overflow-x: hidden;
+}
+#inContentLink{
+	color: white;
+}
+#generalButton{
+		width: 30%;
+	height: 50px;
+	border-radius: 25px;
+	font-size: 40px;
+	background-color: white;
+	border: none;
+	color: white;
+	background-color:rgb(20,20,20);
+	transition: 1s;
+}
+
+#generalButton:hover {
+	background-color:gold;
+	border: none;
+	color: black;
+}
+#generalButtonSpecial{
+	width: 300px;
+	padding: 10px;
+	line-height: 22px;
+	height: 50px;
+	border-radius: 20px;
+	font-size: 40px;
+	background-color: white;
+	border: none;
+	color: white;
+	background: linear-gradient( to bottom left, rgb(252, 3, 3),rgb(3, 57, 252));
+		transition: 1s;
+}
+
+#generalButtonSpecial:hover {
+	background: linear-gradient( to bottom right, rgb(252, 3, 3),rgb(3, 57, 252));
+	color: white;
+	border: none;
+}
+iframe{
+	width: 350;
+}
+@media screen and (max-width: 600px) {
+	#generalButton{
+		font-size: 24px;
+		margin-bottom: 5px;
+  
+	}
+	#generalButtonSpecial{
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+	iframe{
+		max-width: 90vw;
+		width: auto;
+	}
+}

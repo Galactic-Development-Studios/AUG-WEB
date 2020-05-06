@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AFLRP</title>
+	
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+<link rel="manifest" href="/assets/favicons/site.webmanifest">
+<link rel="shortcut icon" href="/assets/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
+<meta name="theme-color" content="#0063bf">
+	<link rel="stylesheet" type="text/css" href="cssKits/generalKit.css">
+	<link rel="stylesheet" type="text/css" href="cssKits/navbarKit.css">
+	
+	<link rel="stylesheet" type="text/css" href="cssKits/fontKit.css">
+	<link rel="stylesheet" type="text/css" href="cssKits/contentKit.css">
+	<link rel="stylesheet" type="text/css" href="cssKits/gridKit.css">
+	<link rel="stylesheet" type="text/css" href="cssKits/loadingKit.css">
+	 <meta charset="UTF-8">
+ 	 <meta name="keywords" content="Flashing Lights,RP,Role Play,FL, Australia, Australian, Police, Fire, EMS, Paramedic">
+  	 <meta name="author" content="AFLRP Web Division">
+ 	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Resources at the tip of a finger.">
+</head>
+<body onload="timeOutCheck()" style="margin: 0;">
+	<script type="text/javascript" src="script.js"></script>
+	<div id="loader"></div>
+	<div id="page" style="display: none;">
+	<div id="nav">
+		<div id="navItem"><a href="index.html" class="navLink">Home</a></div>
+		<div id="navItem"><a href="contact.html" class="navLink">Contact</a></div>
+		<div id="navItem"><a href="join.html" class="navLink">Join</a></div>
+		<div id="navItem"><a href="about.html" class="navLink">About</a></div>
+		<div id="navItem"><a href="resources.html" class="navLinkActive">Resources</a></div>
+	</div>
+	<br><br><hr><br><br>
+	<div id="resourceBodyContent" align="center">
+		<h1 id="resourceHeader">Resource Options</h1>
+		<br><br>
+		<div id="resourceArticlesList" align="center">
+			<div id="resourceSelect">
+				<div class="resourceRow">
+					<div class="resourcesColumn">
+						<h1>Mod Packs</h1><br>
+						<p>The Offical Mod Pack of AFLRP</p>
+						<br><br>
+						<button id="generalButton" onclick="window.open('https://www.dropbox.com/s/zy3bgu0qtmtztb6/Build%20010520-1.zip?dl=1','_blank')">Windows</button><br><br>
+						<h2>Mac Mods are coming</h2>
+						<!-- <button id="generalButton" onclick="window.open('https://www.dropbox.com/s/t8klgoh9zybzetf/Build%20260320-1%20MAC.zip?dl=1','_blank')">Mac</button> -->
+					</div>
+					<div class="resourcesColumn">
+						<h1>Phonetic Alphabet</h1><br>
+						<p>The phonetic alphabet used in radio channels.</p><br><br>
+						<button id="generalButton" onclick="window.open('assets/resources/palphabet.jpg','_blank')">View</button>
+					</div>
+					<div class="resourcesColumn">
+						<h1>10 Codes</h1><br>
+						<p>The codes used in radio channels.</p><br><br>
+						<button id="generalButton" onclick="window.open('assets/resources/Important_Codes.pdf','_blank')">View</button>
+					</div>
+				</div>
+				<div class="resourceRow">
+					<div class="resourcesColumn">
+						<h1>Map</h1><br>
+						<p>The map used in FL mod pack</p><br><br>
+						<button id="generalButton" onclick="window.open('assets/resources/map.png','_blank')">View</button>
+					</div>
+					<div class="resourcesColumn">
+						<h1>Server Staff</h1><br>
+						<p>A list of all the staff of AFLRP</p><br><br>
+						<button id="generalButton" onclick="window.open('assets/resources/server-staff.html','_blank')">View</button>
+					</div>
+					<div class="resourcesColumn">
+						<h1>Unit Roster</h1><br>
+						<p>A colation of all units</p><br><br>
+						<button id="generalButton" onclick="window.open('https://trello.com/b/7B4TfmB2/','_blank')">Open</button>
+					</div>
+				</div>
+				<div class="resourceRow">
+					<div class="resourcesColumn">
+						<h1>PD Procedures</h1><br>
+						<p>The procedures PD units must follow.</p><br><br>
+						<form method="get" action="assets/resources/PD_SOP.pdf">
+					   <button type="submit" id="generalButton">Download!</button>
+					</form>
+					</div>
+					<div class="resourcesColumn">
+						<h1>FD Procedures</h1><br>
+						<p>The procedures FD units must follow.</p><br><br>
+						<form method="get" action="assets/resources/Fire_Department_SOP.pdf">
+					   <button type="submit" id="generalButton">Download!</button>
+					</form>
+					</div>
+					<div class="resourcesColumn">
+						<h1>EMS Procedures</h1><br>
+						<p>The procedures all EMS units must follow.</p><br><br>
+						<form method="get" action="assets/resources/EMS_SOP.pdf">
+					   <button type="submit" id="generalButton">Download!</button>
+					</form>
+					</div>
+				</div>
+			</div>
+			<div class="resourceRow">
+					<div class="resourcesColumn">
+						<h1>Terms and Conditions</h1><br>
+						<p>The Terms and Conditions you agree to when you apply.</p><br><br>
+						<button id="generalButton" onclick="window.open('assets/resources/TAC.html','_blank')">View</button>
+					</div>
+					<div class="resourcesColumn">
+						<h1>Privacy Policy</h1><br>
+						<p>The way we collect and process your data when you apply.</p><br><br>
+						<button id="generalButton" onclick="window.open('assets/resources/PP.html','_blank')">View</button>
+					</div>
+					<div class="resourcesColumn">
+						<h1>Rules</h1><br>
+						<p>The rules of AFLRP Discord</p><br><br>
+						<button id="generalButton" onclick="window.location.href='assets/resources/rules.html'">Open</button>
+					</div>
+					<div class="resourcesColumn">
+						<h1>Activity Policy</h1><br>
+						<p>The Activity policy of AFLRP</p><br><br>
+						<button id="generalButton" onclick="window.location.href='assets/resources/ActivityPolicy.html','_blank'">Open</button>
+					</div>
+					<div class="resourcesColumn">
+						<h1>LOA Application</h1><br>
+						<p>Leave of Absence requests from the server website will appear here for a CSO to discuss and subsequently accept and decline.</p><br><br>
+						<button id="generalButton" onclick="window.location.href='application/LOAApplication.html','_blank'">Open</button>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

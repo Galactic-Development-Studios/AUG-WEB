@@ -1,0 +1,30 @@
+#contactList{
+
+}
+
+#contactListItem{
+	font-size: 40px;
+	margin-bottom: 10px;
+
+}
+#contactItemList{
+ 
+}
+#contactListItemNumbered{
+ 		font-size: 20px;
+ 	}
+#contactItemListItem{
+font-size: 25px;
+}
+ @media screen and (max-width: 600px) {
+ 	#contactListItem{
+ 		font-size: 20px;
+ 	}
+ 	#contactItemListItem{
+ 		font-size: 15px;
+ 	}
+ 	#contactListItemNumbered{
+ 		margin-left: 20px;
+ 		font-size: 25px;
+ 	}
+}
