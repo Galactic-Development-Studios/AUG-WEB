@@ -19,6 +19,14 @@
 	transition: 0.5s;
 	padding: 15px;
 }
+#navItemActive{
+	display: inline-block;
+	width: 17%;
+	margin-bottom: 30px;
+	background-color: gold;
+	transition: 0.5s;
+	padding: 15px;
+}
 #navItem:hover{
 	background-color: gold;
 	color:black;
