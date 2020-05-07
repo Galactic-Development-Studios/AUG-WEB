@@ -79,19 +79,21 @@ float: left;
 #resourceContentLeft{
 	position: absolute;
 	top: 50%;
-	left: 
 }
 #resourceContent{
 	margin-top: 25%;
 }
 #gameList{
-	
+	float: left;
+	max-width: 69%;
+	height: auto;
+	display: inline-block;
 }
 #gameListItem{
 	display: inline-block;
 	width: 15%;
-	margin-left: 7%;
-	margin-right: 7%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
 	margin-bottom: 20px;
 	transition: 0.4s;
 	padding-top: 5px;
@@ -100,6 +102,33 @@ float: left;
 	background-color: gold;
 	color: black;
 }
+#gamePreviewItem{
+	padding: 0px;
+	height: 388px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	width: 30%;
+	padding: 5px;
+	float: right;
+	display: inline-block;
+	text-align: left;
+	border: 2.5px solid gold;
+}
+#gamePreviewItemHeader{
+	background: linear-gradient(to bottom right, gold, rgb(200,150,0));
+	width: 100%;
+	padding: 15px;
+	color: black;
+}
+#gamePreviewItemBody{
+	padding-top: 15px;
+	background-color: black;
+	width: 100%;
+	color: white;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
  @media screen and (max-width: 600px) {
   .newsColumn {
     width: 100%;
@@ -122,4 +151,7 @@ float: left;
   	width: 100%;
 
   }
+  #gamePreviewItem{
+display: none; 
+}
 }

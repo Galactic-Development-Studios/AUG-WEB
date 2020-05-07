@@ -33,29 +33,57 @@
 		<a href="contact.html" class="navLink"><div id="navItem">Contact</div></a>
 		<div id="navItemSpecial"><iframe src="https://www.guilded.gg/canvas_index.html?route=%2Fcanvas%2Fembed%2Fbadge%2F1EDa9Omj" width="143" height="32" frameborder="0" scrolling="no"></iframe></div>
 		<a href="about.html" class="navLink"><div id="navItem">About</div></a>
-		<a href="resources.html" class="navLink"><div id="navItem">User Portal</div></a>
+		<a href="UC/Login.html" class="navLink"><div id="navItem">User Portal</div></a>
 	</div>
 	<div id="mainBodyContent" align="center">
 	<h1>Aussie Games</h1>
 	<p>Welcome to Aussie Games! We are a developing gaming community that features both indie and mainstream games.
 With an enthusiastic, friendly and supportive member base combined with world class Community Support Officers we can help you find the community for you and support you along the way.
 <br><br>Sounds intriguing? <br>Click the link below to join!</p>
-	<button onclick="window.location.href='join.html'"><p id="buttonText">Join us today!</p></button>
+	<button onclick="window.location.href='join.html'"><p id="buttonText">Join us today!</p></button><br>
+	<a id="inContentLink" href="guilded.html">Learn more about guilded, our new messaging service.</a>
 	</div>
 	<a></a>
 	<br><br><br><br>
+	<div id="offeredGameSection">
 	<h3>We offer communities for the following games:</h3><br><br><br>
 	<div id="gameList">
-		<div id="gameListItem"><h3 id="gameListItemText">Flashing Lights</h3><img  style="width: 75px;"src="assets/images/gameIcons/FL.jpg"></div>
-		<div id="gameListItem"><h3 id="gameListItemText">Garry's Mod</h3><img  style="width: 75px;" src="assets/images/gameIcons/GM.jpg"></div>
-		<div id="gameListItem"><h3 id="gameListItemText">Infinite Flight</h3><img style="width: 75px;" src="assets/images/gameIcons/IF.jpg"></div>
-		<div id="gameListItem"><h3 id="gameListItemText">Kerbal Space Program</h3><img style="width: 75px;" src="assets/images/gameIcons/KSP.jpg"></div>
-		<div id="gameListItem"><h3 id="gameListItemText">Minecraft</h3><img style="width: 75px;" src="assets/images/gameIcons/MC.jpg"></div>
-		<div id="gameListItem"><h3 id="gameListItemText">Payday 2</h3><img style="width: 75px;" src="assets/images/gameIcons/P2.jpg"></div>
-		<div id="gameListItem"><h3 id="gameListItemText">Roblox</h3><img style="width: 75px;" src="assets/images/gameIcons/RB.jpg"></div>
-		<div id="gameListItem"><h3 id="gameListItemText">Surviving Mars</h3><img style="width: 75px;" src="assets/images/gameIcons/SM.jpg"></div>
-		<div id="gameListItem"><h3 id="gameListItemText">Team Fortress</h3><img style="width: 75px;" src="assets/images/gameIcons/TF.jpg"></div>
+		<a onclick="openGamePreviewFL()" style="color: white;"><div id="gameListItem"><h3 id="gameListItemText">Flashing Lights</h3><img  style="width: 75px;"src="assets/images/gameIcons/FL.png"></div></a>
+
+		<a onclick="openGamePreviewGMOD()" style="color: white;"><div id="gameListItem"><h3 id="gameListItemText">Garry's Mod</h3><img  style="width: 75px;"src="assets/images/gameIcons/GM.png"></div></a>
+
+		<a onclick="openGamePreviewIF()" style="color: white;"><div id="gameListItem"><h3 id="gameListItemText">Infinite Flight</h3><img  style="width: 75px;"src="assets/images/gameIcons/IF.png"></div></a>
+		
+		<a onclick="openGamePreviewKSP()" style="color: white;"><div id="gameListItem"><h3 id="gameListItemText">Kerbal Space Program</h3><img  style="width: 75px;"src="assets/images/gameIcons/KSP.png"></div></a>
+
+		<a onclick="openGamePreviewMC()" style="color: white;"><div id="gameListItem"><h3 id="gameListItemText">Minecraft</h3><img  style="width: 75px;"src="assets/images/gameIcons/MC.png"></div></a>
+		<a onclick="openGamePreviewP2()" style="color: white;"><div id="gameListItem"><h3 id="gameListItemText">Payday 2</h3><img  style="width: 75px;"src="assets/images/gameIcons/P2.png"></div></a>
+
+		<a onclick="openGamePreviewRB()" style="color: white;"><div id="gameListItem"><h3 id="gameListItemText">Roblox</h3><img  style="width: 75px;"src="assets/images/gameIcons/RB.png"></div></a>
+
+		<a onclick="openGamePreviewSM()" style="color: white;"><div id="gameListItem"><h3 id="gameListItemText">Surviving Mars</h3><img  style="width: 75px;"src="assets/images/gameIcons/SM.png"></div></a>
+		<a onclick="openGamePreviewTF()" style="color: white;"><div id="gameListItem"><h3 id="gameListItemText">Team Fortress</h3><img  style="width: 75px;"src="assets/images/gameIcons/TF.png"></div></a>
+
 	</div>
+	<div id="gamePreviewItem">
+		<div id="gamePreviewItemHeader">
+		<h2><strong>Game:</strong></h2><h2 id="gameHere">Click a game to get started</h2><br><br>
+		<h4><strong>Genre:</strong></h4><h4 id="genreHere"></h4><br>
+		<h4><strong>Developer:</strong></h4><h4 id="developerHere"></h4><br>
+		<h4><strong>Publisher:</strong></h4><h4 id="publisherHere"></h4><br>
+		</div>
+		<div id="gamePreviewItemBody">
+			<h4 id="gamePreviewItemBodyHeader"><strong>About:<strong></h4>
+			<p id="gamePreviewItemBodyParagraph1" style="margin-top: 15px;">Click a game on the left. To get info about it.</p>
+			<img src="" id="gamePreviewItemBodyImage1" class="previewGameIMG">
+			<p id="gamePreviewItemBodyParagraph2" style="margin-top: 15px;"></p>
+			<img src="" id="gamePreviewItemBodyImage2" class="previewGameIMG">
+			<p id="gamePreviewItemBodyParagraph3" style="margin-top: 15px;"></p>
+			<video id="gamePreviewItemBodyVideo" class="previewGameIMG" src="" controls></video>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="infoChanger.js"></script>
 </div>
 </body>
 </html>

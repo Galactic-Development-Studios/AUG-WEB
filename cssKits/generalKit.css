@@ -66,6 +66,14 @@ overflow-x: hidden;
 iframe{
 	width: 350;
 }
+
+.previewGameIMG{
+	width: 80%;
+	margin-top: 15px;
+}
+#GameVideo{
+	width: 80%;
+}
 @media screen and (max-width: 600px) {
 	#generalButton{
 		font-size: 24px;
