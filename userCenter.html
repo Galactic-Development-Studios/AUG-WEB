@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AUG</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+	<!-- Navbar -->
+	<div id="nav">
+		<a href="index.html" id="navLink"><div id="navItem">Home</div></a>
+		<a href="about.html" id="navLink"><div id="navItem">About</div></a>
+		<a href="join.html" id="navLink"><div id="navItem">Join</div></a>
+		<a href="userCenter.html" id="navLinkActive"><div id="navItemActive">User Center</div></a>
+	</div>
+	<!-- Main Body -->
+	<div id="page">
+	<div id="homePageBodySpecial2" class="homePageBody6">
+		<h1>Login to your User Center</h1><br>
+		<form onsubmit="return false" id="loginForm">
+			<label for="username">User ID</label><br>
+			<input type="text" name="username" id="username"><br><br>
+			<label for="password">Password</label><br>
+			<input type="password" name="password" id="password">
+			<br><br>
+			<button class="joinButton" type="submit" onclick="lookForUser()">Login</button>
+		</form><br>
+	</div>
+	<div id="UserCenter" class="homePageBody7">
+		<h1 style="display: inline;">Hello, </h1><h2 style="display: inline;" id="userNameHereHeader">Why dont I change</h2><br>
+	<br>
+	<h3> You are in these groups, click on them to access resouces</h3>
+	<a href="" id="UCGameIconA1" class="UCGameIconA"><img src="assets/images/gameIcons/FL.png" class="UCGameIconImg"><p>Flashing Lights</p></a>
+	</div>
+	</div>
+	<script type="text/javascript" src="uc.js"></script>
+</body>
+</html>
