@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AUG</title>
+	<link rel="stylesheet" type="text/css" href="../../stylesheet.css">
+</head>
+<body>
+	<!-- Navbar -->
+	<div id="nav">
+		<a href="index.html" id="navLink"><div id="navItem">Home</div></a>
+		<a href="about.html" id="navLink"><div id="navItem">About</div></a>
+		<a href="join.html" id="navLink"><div id="navItem">Join</div></a>
+		<a href="userCenter.html" id="navLinkActive"><div id="navItemActive">User Center</div></a>
+	</div>
+	<!-- Main Body -->
+	<div id="page">
+	<div id="homePageBodySpecial2" class="homePageBody6">
+		<h1>Sign Up to User Center</h1><br>
+		<form data-netlify="true" id="loginForm" name="UCSignUpForm">
+			<label for="username">User ID</label><br>
+			<input type="text" name="username" id="username"><br><br>
+			<label for="password">Password</label><br>
+			<input type="password" name="password" id="password">
+			<br><br>
+			<button class="joinButton" type="submit" onclick="lookForUser()">Sign Up</button>
+		</form><br>
+		<a id="inContentLink" href="../../userCenter.html">Wait I want to login</a>
+	<script type="text/javascript" src="uc.js"></script>
+</body>
+</html>
