@@ -56,21 +56,41 @@ function lookForUser(){
 			window.alert("Username or password incorrect");
 			console.warn("PASSWrong");
 		}
-	}	else if (userName == "Galaxy"){
-		if (password == "Gold5121") {
-			console.log("userGalaxyLogged")
+	}	else if (userName == "Teddy9264"){
+		if (password == "No comment") {
+			console.log("userTeddyLogged");
+			FLGroup = true;
+			GMGroup = false;
+			IFGroup = false;
+			KSPGroup = false;
+			MCGroup = true;
+			P2Group = false;
+			RBGroup = true;
+			SMGroup = false;
+			TFGroup = false;
+			changePageUC();
 		}else{
 			window.alert("Username or password incorrect");
 			console.warn("PASSWrong");
 		}
-	}	else if (userName == ""){
-		if (password == "SamSam") {
-			console.log("userSamSamLogged")
+		}else if (userName == "TomD"){
+		if (password == "Maxie2014") {
+			console.log("userTomDLogged");
+			FLGroup = true;
+			GMGroup = false;
+			IFGroup = false;
+			KSPGroup = false;
+			MCGroup = true;
+			P2Group = false;
+			RBGroup = true;
+			SMGroup = false;
+			TFGroup = false;
+			changePageUC();
 		}else{
 			window.alert("Username or password incorrect");
 			console.warn("PASSWrong");
 		}
-	}	else{
+		}else{
 		window.alert("Username or password incorrect");
 		console.warn("USERWrong");
 	}
