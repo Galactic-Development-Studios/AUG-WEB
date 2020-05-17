@@ -11,3 +11,13 @@ function closeGameList(){
 		document.getElementById("close2").style.display = "block";
 			document.getElementById("close3").style.display = "block";
 }
+function timeOutCheck(){
+	loadVar = setTimeout(loadFin, 2500);
+}
+function loadFin(){
+	var page = document.getElementById("page");
+	var spinner = document.getElementById("loader");
+
+	spinner.style.display="none";
+	page.style.display="block";
+}

@@ -4,7 +4,9 @@
 	<title>AUG</title>
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
-<body>
+<body onload="timeOutCheck()">
+	<div id="loader" style="display: block;" ></div>
+	<div id="page" style="display: none;">
 	<!-- Navbar -->
 	<div id="nav">
 		<a href="index.html" id="navLinkActive"><div id="navItemActive">Home</div></a>
@@ -13,7 +15,7 @@
 		<a href="userCenter.html" id="navLink"><div id="navItem">User Center</div></a>
 	</div>
 	<!-- Main Body -->
-	<div id="page">
+	
 	<div id="homePageBody" class="homePageBody1">
 		<h1>Aussie Games</h1><br>
 		<p>Welcome to Aussie Games! We are a developing gaming community that features both indie and mainstream games.<br>

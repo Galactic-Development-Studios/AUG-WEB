@@ -4,7 +4,9 @@
 	<title>AUG</title>
 	<link rel="stylesheet" type="text/css" href="../../stylesheet.css">
 </head>
-<body>
+<body onload="timeOutCheck()">
+	<div id="loader" style="display: block;" ></div>
+	<div id="page" style="display: none;">
 	<!-- Navbar -->
 	<div id="nav">
 		<a href="index.html" id="navLink"><div id="navItem">Home</div></a>
@@ -13,7 +15,6 @@
 		<a href="userCenter.html" id="navLinkActive"><div id="navItemActive">User Center</div></a>
 	</div>
 	<!-- Main Body -->
-	<div id="page">
 	<div id="homePageBodySpecial2" class="homePageBody6">
 		<h1>Sign Up to User Center</h1><br>
 		<form data-netlify="true" id="loginForm" name="UCSignUpForm">
@@ -25,7 +26,7 @@
 			<button class="joinButton" type="submit" onclick="lookForUser()">Sign Up</button>
 		</form><br>
 		<a id="inContentLink" href="../../userCenter.html">Wait I want to login</a>
-	<script type="text/javascript" src="uc.js"></script>
+	<script type="text/javascript" src="../../script.js"></script>
 	<!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
