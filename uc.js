@@ -80,7 +80,7 @@ function lookForUser(){
 			GMGroup = false;
 			IFGroup = false;
 			KSPGroup = false;
-			MCGroup = true;
+			MCGroup = false;
 			P2Group = false;
 			RBGroup = true;
 			SMGroup = false;
