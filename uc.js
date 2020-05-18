@@ -73,7 +73,7 @@ function lookForUser(){
 			window.alert("Username or password incorrect");
 			console.warn("PASSWrong");
 		}
-		}else if (userName == "TomD"){
+		}else if (userName == "davo2212"){
 		if (password == "Maxie2014") {
 			console.log("userTomDLogged");
 			FLGroup = true;
