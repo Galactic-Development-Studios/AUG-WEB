@@ -404,7 +404,7 @@ background-size: cover;
 	border: 2px solid blue;
 	border-radius: 12px;
 	width: 200px;
-	position: inline;
+	position: block;
 	height: 25px;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -424,7 +424,7 @@ background-size: cover;
 	width: 200px;
 	height: 25px;
 	padding-left: 15px;
-	position: inline;
+	position: block;
 	padding-right: 15px;
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -433,6 +433,9 @@ background-size: cover;
 #password:hover{
 	border: 4px solid gold;
 	zoom:1.25;
+
+	margin-left: auto;
+	margin-right: auto;
 }
 #resetPassForm{
 	display: none;
@@ -539,10 +542,14 @@ background-color: gold;
 		width: 100%;
 		height: auto;
 		font-size: 15px;
+				padding-top: 5px;
+		padding-bottom: 5px;
 	}
 	#navLinkActive{
 		width: 100%;
 		height: auto;
+		padding-top: 5px;
+		padding-bottom: 5px;
 				font-size: 15px;
 	}
 	#homePageBody{
@@ -561,6 +568,9 @@ background-color: gold;
 	}
 	#page{
 		padding-top: 75px;
+	}
+	#username{
+		left: 0;
 	}
 	#username:hover{
 	zoom: 1;

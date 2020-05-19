@@ -18,6 +18,10 @@ document.getElementById("UCGameIconA6").style.display = "None";
 document.getElementById("UCGameIconA7").style.display = "None";
 document.getElementById("UCGameIconA8").style.display = "None";
 document.getElementById("UCGameIconA9").style.display = "None";
+function loginFailer(){
+	document.getElementById("password").style.border = "2px solid red";
+	document.getElementById("username").style.border = "2px solid red";
+}
 function lookForUser(){
 	userName = document.getElementById("username").value;
 	password = document.getElementById("password").value;
@@ -36,8 +40,10 @@ function lookForUser(){
 			TFGroup = true;
 			changePageUC();
 		}else{
+			loginFailer();
 			window.alert("Username or password incorrect");
 			console.warn("PASSWrong");
+			
 		}
 	}else if (userName == "Galaxy"){
 		if (password == "Gold5121AUG") {
@@ -54,6 +60,7 @@ function lookForUser(){
 			changePageUC();
 		}else{
 			window.alert("Username or password incorrect");
+
 			console.warn("PASSWrong");
 		}
 	}	else if (userName == "Teddy9264"){
