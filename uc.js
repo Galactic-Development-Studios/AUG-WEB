@@ -103,7 +103,7 @@ function lookForUser(){
 	}
 }
 function changePageUC(){
-	var loginScreen = document.getElementById("homePageBodySpecial2");
+	var loginScreen = document.getElementById("homePageBodySpecial");
 	var userCenter = document.getElementById("UserCenter");
 	var header = document.getElementById("userNameHereHeader");
 	console.log("Changed, Variables Loaded");
