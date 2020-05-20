@@ -8,7 +8,6 @@ html{
 }
 body{
 	width: 100vw;
-	transition: 0.5s;
 	max-width: 100%;
 	min-height: 100vh;
 	height: auto;
@@ -333,6 +332,17 @@ background-size: cover;
 .homePageBodyTF p{
 	font-size: 25px;
 }
+.homePageBodyStaff{
+	min-height: 71vh;
+	height: auto;
+	 background-repeat: none;
+background-position: center;
+background-size: cover;
+	 background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),    url('assets/images/backgrounds/background1.png');
+}
+.homePageBodyStaff p{
+	font-size: 25px;
+}
 /* Game List */
 #gameList{
 	display: none;
@@ -583,5 +593,21 @@ background-color: gold;
 }
 #gWidget2{
 	display: inline;
+}
+
+.resourceButton{
+margin:none;
+width: 100%;
+}
+
+#resourceRow{
+	display: block;
+	width: 100%;
+}
+#resourceColoumn{
+	display: inline-block;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
 }

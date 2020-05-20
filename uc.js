@@ -9,6 +9,7 @@ var P2Group = false;
 var RBGroup = false;
 var SMGroup = false;
 var TFGroup = false;
+var staffGroup = false;
 document.getElementById("UCGameIconA1").style.display = "None";
 document.getElementById("UCGameIconA2").style.display = "None";
 document.getElementById("UCGameIconA3").style.display = "None";
@@ -18,6 +19,7 @@ document.getElementById("UCGameIconA6").style.display = "None";
 document.getElementById("UCGameIconA7").style.display = "None";
 document.getElementById("UCGameIconA8").style.display = "None";
 document.getElementById("UCGameIconA9").style.display = "None";
+document.getElementById("UCGameIconA10").style.display = "None";
 function loginFailer(){
 	document.getElementById("password").style.border = "2px solid red";
 	document.getElementById("username").style.border = "2px solid red";
@@ -38,6 +40,7 @@ function lookForUser(){
 			RBGroup = true;
 			SMGroup = true;
 			TFGroup = true;
+			staffGroup = true;
 			changePageUC();
 		}else{
 			loginFailer();
@@ -57,6 +60,7 @@ function lookForUser(){
 			RBGroup = true;
 			SMGroup = true;
 			TFGroup = false;
+			staffGroup = true;
 			changePageUC();
 		}else{
 			window.alert("Username or password incorrect");
@@ -75,6 +79,7 @@ function lookForUser(){
 			RBGroup = true;
 			SMGroup = false;
 			TFGroup = false;
+			staffGroup = true;
 			changePageUC();
 		}else{
 			window.alert("Username or password incorrect");
@@ -92,6 +97,7 @@ function lookForUser(){
 			RBGroup = true;
 			SMGroup = false;
 			TFGroup = false;
+			staffGroup = true;
 			changePageUC();
 		}else{
 			window.alert("Username or password incorrect");
@@ -174,6 +180,13 @@ function changePageUC(){
 			console.log("is in TF");
 		} else{
 			document.getElementById("UCGameIconA9").style.display = "none";
+			console.log("is not in TF");
+		};
+		if (staffGroup == true){
+			document.getElementById("UCGameIconA10").style.display = "inline-block";
+			console.log("is in TF");
+		} else{
+			document.getElementById("UCGameIconA10").style.display = "none";
 			console.log("is not in TF");
 		};
 }
