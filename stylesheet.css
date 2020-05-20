@@ -550,17 +550,31 @@ background-color: gold;
 	}
 	#navLink{
 		width: 100%;
-		height: auto;
+		height: 40px;
 		font-size: 15px;
 				padding-top: 5px;
 		padding-bottom: 5px;
 	}
 	#navLinkActive{
 		width: 100%;
-		height: auto;
+		height: 40px;
 		padding-top: 5px;
 		padding-bottom: 5px;
 				font-size: 15px;
+	}
+	#navItem{
+		height: 25px;
+		margin-top: auto;
+		margin-bottom: auto;
+		position: relative;
+		top:35%;
+	}
+	#navItemActive{
+		height: 25px;
+		margin-top: auto;
+		margin-bottom: auto;
+		position: relative;
+		top: 35%;
 	}
 	#homePageBody{
 		padding-bottom: 175px;
