@@ -165,6 +165,9 @@ background-color: gold;
   background-size: cover;
  background-position: center;
 }
+#homePageBody p{
+font-size: 20px;
+}
 .homePageBody1{
 padding-top: 15vh;
 margin-top: 5vh;
@@ -172,9 +175,6 @@ margin-top: 5vh;
   background-size: cover;
  background-position: center;
  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),    url('assets/images/backgrounds/background1.png');
-}
-.homePageBody1 p{
-	font-size: 25px;
 }
 .homePageBody2{
 margin-top: 1vh;
@@ -185,18 +185,12 @@ background-position: center;
 background-size: cover;
  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),    url('assets/images/backgrounds/background2.png');
 }
-.homePageBody2 p{
-	font-size: 25px;
-}
 .homePageBody3{
 	min-height: 250px;
 	 background-repeat: none;
 background-position: center;
 background-size: cover;
 	 background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),    url('assets/images/backgrounds/background3.png');
-}
-.homePageBody3 p{
-	font-size: 25px;
 }
 .homePageBody4{
 	min-height: 250px;
@@ -618,7 +612,7 @@ background-color: gold;
 	display: inline;
 }
 .firstDiv{
-	margin-top: 110px;
+	margin-top: 130px;
 }
 .resourceButton{
 margin:none;
