@@ -173,7 +173,7 @@ margin-top: 5vh;
  background-repeat: none;
   background-size: cover;
  background-position: center;
- background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),    url('assets/images/backgrounds/background1.png');
+ background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),    url('assets/images/backgrounds/background1.webp');
 }
 .homePageBody2{
 margin-top: 1vh;
@@ -182,21 +182,21 @@ min-height: 40vh;
  background-repeat: none;
 background-position: center;
 background-size: cover;
- background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),    url('assets/images/backgrounds/background2.png');
+ background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),    url('assets/images/backgrounds/background2.webp');
 }
 .homePageBody3{
 	min-height: 250px;
 	 background-repeat: none;
 background-position: center;
 background-size: cover;
-	 background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),    url('assets/images/backgrounds/background3.png');
+	 background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),    url('assets/images/backgrounds/background3.webp');
 }
 .homePageBody4{
 	min-height: 250px;
 	 background-repeat: none;
 background-position: center;
 background-size: cover;
-	 background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),    url('assets/images/backgrounds/background4.png');
+	 background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),    url('assets/images/backgrounds/background4.webp');
 }
 .homePageBody4 p{
 	font-size: 25px;
@@ -206,7 +206,7 @@ background-size: cover;
 	 background-repeat: none;
 background-position: center;
 background-size: cover;
-	 background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),    url('assets/images/backgrounds/background5.png');
+	 background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),    url('assets/images/backgrounds/background5.webp');
 }
 .homePageBody5 p{
 	font-size: 25px;
@@ -216,7 +216,7 @@ background-size: cover;
 	 background-repeat: none;
 background-position: center;
 background-size: cover;
-	 background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),    url('assets/images/backgrounds/background6.png');
+	 background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),    url('assets/images/backgrounds/background6.webp');
 }
 .homePageBody6 p{
 	font-size: 25px;
@@ -227,7 +227,7 @@ background-size: cover;
 	 background-repeat: none;
 background-position: center;
 background-size: cover;
-	 background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),    url('assets/images/backgrounds/background7.png');
+	 background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),    url('assets/images/backgrounds/background7.webp');
 }
 .homePageBody7 p{
 	font-size: 25px;
@@ -238,7 +238,7 @@ background-size: cover;
 	 background-repeat: none;
 background-position: center;
 background-size: cover;
-	 background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),    url('assets/images/backgrounds/background2.png');
+	 background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),    url('assets/images/backgrounds/background2.webp');
 }
 .homePageBodyFL p{
 	font-size: 25px;
@@ -249,7 +249,7 @@ background-size: cover;
 	 background-repeat: none;
 background-position: center;
 background-size: cover;
-	 background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),    url('assets/images/backgrounds/background6.png');
+	 background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),    url('assets/images/backgrounds/background6.webp');
 }
 .homePageBodyGM p{
 	font-size: 25px;
@@ -260,7 +260,7 @@ background-size: cover;
 	 background-repeat: none;
 background-position: center;
 background-size: cover;
-	 background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),    url('assets/images/backgrounds/background4.png');
+	 background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),    url('assets/images/backgrounds/background4.webp');
 }
 .homePageBodyIF p{
 	font-size: 25px;
@@ -271,7 +271,7 @@ background-size: cover;
 	 background-repeat: none;
 background-position: center;
 background-size: cover;
-	 background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),    url('assets/images/backgrounds/background7.png');
+	 background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),    url('assets/images/backgrounds/background7.webp');
 }
 .homePageBodyKSP p{
 	font-size: 25px;
@@ -282,7 +282,7 @@ background-size: cover;
 	 background-repeat: none;
 background-position: center;
 background-size: cover;
-	 background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),    url('assets/images/backgrounds/background3.png');
+	 background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),    url('assets/images/backgrounds/background3.webp');
 }
 .homePageBodyMC p{
 	font-size: 25px;
@@ -293,7 +293,7 @@ background-size: cover;
 	 background-repeat: none;
 background-position: center;
 background-size: cover;
-	 background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),    url('assets/images/backgrounds/background8.png');
+	 background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),    url('assets/images/backgrounds/background8.webp');
 }
 .homePageBodyP2 p{
 	font-size: 25px;
@@ -304,7 +304,7 @@ background-size: cover;
 	 background-repeat: none;
 background-position: center;
 background-size: cover;
-	 background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),    url('assets/images/backgrounds/background9.png');
+	 background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),    url('assets/images/backgrounds/background9.webp');
 }
 .homePageBodyRB p{
 	font-size: 25px;
@@ -315,7 +315,7 @@ background-size: cover;
 	 background-repeat: none;
 background-position: center;
 background-size: cover;
-	 background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),    url('assets/images/backgrounds/background10.png');
+	 background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),    url('assets/images/backgrounds/background10.webp');
 }
 .homePageBodySM p{
 	font-size: 25px;
@@ -326,7 +326,7 @@ background-size: cover;
 	 background-repeat: none;
 background-position: center;
 background-size: cover;
-	 background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),    url('assets/images/backgrounds/background5.png');
+	 background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),    url('assets/images/backgrounds/background5.webp');
 }
 .homePageBodyTF p{
 	font-size: 25px;
@@ -337,7 +337,7 @@ background-size: cover;
 	 background-repeat: none;
 background-position: center;
 background-size: cover;
-	 background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),    url('assets/images/backgrounds/background1.png');
+	 background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),    url('assets/images/backgrounds/background1.webp');
 }
 .homePageBodyStaff p{
 	font-size: 25px;
@@ -546,7 +546,7 @@ background-color: gold;
 #coloumn1Policy{
 	width: 10%;
 	height: 100vh;
-	background: linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.15)), url(assets/images/bottomPolicy.png);
+	background: linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0.15)), url(assets/images/bottomPolicy.webp);
 	background-size: cover;
 	background-position: bottom;
 	display: inline-block;
@@ -570,7 +570,7 @@ background-color: gold;
 	display: inline-block;
 	float: right;
 	height: 49.5vh;
-	background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(assets/images/bottomPolicy.png);
+	background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(assets/images/bottomPolicy.webp);
 	background-size: cover;
 	background-position: center;
 	padding-left: 15px;
