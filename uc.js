@@ -5,10 +5,8 @@ var GMGroup = false;
 var IFGroup = false;
 var KSPGroup = false;
 var MCGroup = false;
-var P2Group = false;
 var RBGroup = false;
 var SMGroup = false;
-var TFGroup = false;
 var staffGroup = false;
 document.getElementById("UCGameIconA1").style.display = "None";
 document.getElementById("UCGameIconA2").style.display = "None";
@@ -18,8 +16,6 @@ document.getElementById("UCGameIconA5").style.display = "None";
 document.getElementById("UCGameIconA6").style.display = "None";
 document.getElementById("UCGameIconA7").style.display = "None";
 document.getElementById("UCGameIconA8").style.display = "None";
-document.getElementById("UCGameIconA9").style.display = "None";
-document.getElementById("UCGameIconA10").style.display = "None";
 function loginFailer(){
 	document.getElementById("password").style.border = "2px solid red";
 	document.getElementById("username").style.border = "2px solid red";
@@ -36,10 +32,8 @@ function lookForUser(){
 			IFGroup = true;
 			KSPGroup = true;
 			MCGroup = true;
-			P2Group = true;
 			RBGroup = true;
 			SMGroup = true;
-			TFGroup = true;
 			staffGroup = true;
 			changePageUC();
 		}else{
@@ -56,10 +50,8 @@ function lookForUser(){
 			IFGroup = true;
 			KSPGroup = true;
 			MCGroup = true;
-			P2Group = false;
 			RBGroup = true;
 			SMGroup = true;
-			TFGroup = false;
 			staffGroup = true;
 			changePageUC();
 		}else{
@@ -75,10 +67,8 @@ function lookForUser(){
 			IFGroup = false;
 			KSPGroup = false;
 			MCGroup = true;
-			P2Group = false;
 			RBGroup = true;
 			SMGroup = false;
-			TFGroup = false;
 			staffGroup = true;
 			changePageUC();
 		}else{
@@ -93,10 +83,8 @@ function lookForUser(){
 			IFGroup = false;
 			KSPGroup = false;
 			MCGroup = false;
-			P2Group = false;
 			RBGroup = true;
 			SMGroup = false;
-			TFGroup = false;
 			staffGroup = true;
 			changePageUC();
 		}else{
@@ -154,39 +142,25 @@ function changePageUC(){
 			document.getElementById("UCGameIconA5").style.display = "none";
 			console.log("is not in MC");
 		};
-		if (P2Group == true){
-			document.getElementById("UCGameIconA6").style.display = "inline-block";
-			console.log("is in P2");
-		} else{
-			document.getElementById("UCGameIconA6").style.display = "none";
-			console.log("is not in P2");
-		};
 		if (RBGroup == true){
-			document.getElementById("UCGameIconA7").style.display = "inline-block";
+			document.getElementById("UCGameIconA6").style.display = "inline-block";
 			console.log("is in Roblox");
 		} else{
-			document.getElementById("UCGameIconA7").style.display = "none";
+			document.getElementById("UCGameIconA6").style.display = "none";
 			console.log("is not in Roblox");
 		};
 		if (SMGroup == true){
-			document.getElementById("UCGameIconA8").style.display = "inline-block";
+			document.getElementById("UCGameIconA7").style.display = "inline-block";
 			console.log("is in SM");
 		} else{
-			document.getElementById("UCGameIconA8").style.display = "none";
+			document.getElementById("UCGameIconA7").style.display = "none";
 			console.log("is not in SM");
 		};
-		if (TFGroup == true){
-			document.getElementById("UCGameIconA9").style.display = "inline-block";
-			console.log("is in TF");
-		} else{
-			document.getElementById("UCGameIconA9").style.display = "none";
-			console.log("is not in TF");
-		};
 		if (staffGroup == true){
-			document.getElementById("UCGameIconA10").style.display = "inline-block";
+			document.getElementById("UCGameIconA8").style.display = "inline-block";
 			console.log("is in TF");
 		} else{
-			document.getElementById("UCGameIconA10").style.display = "none";
+			document.getElementById("UCGameIconA8").style.display = "none";
 			console.log("is not in TF");
 		};
 }
