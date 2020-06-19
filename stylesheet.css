@@ -570,6 +570,7 @@ background-color: gold;
 	display: inline-block;
 	float: right;
 	height: 49.5vh;
+	overflow-y: scroll;
 	background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(assets/images/bottomPolicy.webp);
 	background-size: cover;
 	background-position: center;
