@@ -91,6 +91,22 @@ function lookForUser(){
 			window.alert("Username or password incorrect");
 			console.warn("PASSWrong");
 		}
+		else if (userName == "Gubbys"){
+		if (password == "Nicho221539") {
+			console.log("userWindBurnerLogged");
+			FLGroup = true;
+			GMGroup = true;
+			IFGroup = false;
+			KSPGroup = false;
+			MCGroup = true;
+			RBGroup = true;
+			SMGroup = false;
+			staffGroup = false;
+			changePageUC();
+		}else{
+			window.alert("Username or password incorrect");
+			console.warn("PASSWrong");
+		}
 		}else{
 		window.alert("Username or password incorrect");
 		console.warn("USERWrong");
