@@ -106,7 +106,6 @@ function lookForUser(){
 		}else{
 			window.alert("Username or password incorrect");
 			console.warn("PASSWrong");
-		}
 		}else{
 		window.alert("Username or password incorrect");
 		console.warn("USERWrong");
