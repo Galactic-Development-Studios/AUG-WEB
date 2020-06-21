@@ -65,8 +65,8 @@
 	</div>
 	<button class="joinButton" onclick="resetPasswordShow()">Ask for a password reset</button>
 	<p style="font-size: 10px;">This may take some time, around 48 hours.</p>
-	<div id="resetPassForm" method="POST" data-netlify="true" onsubmit="resetPasswordHide()" name="resetPassForm">
-		<form>
+	<div id="resetPassForm" >
+		<form method="POST" data-netlify="true" onsubmit="resetPasswordHide()" name="resetPassForm">
 			<label> Username:
 			<input type="text" name="resetUser" required>
 			</label><br>
