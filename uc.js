@@ -91,6 +91,7 @@ function lookForUser(){
 			window.alert("Username or password incorrect");
 			console.warn("PASSWrong");
 		}
+		}
 		else if (userName == "Gubbys"){
 		if (password == "Nicho221539") {
 			console.log("userWindBurnerLogged");
@@ -106,6 +107,7 @@ function lookForUser(){
 		}else{
 			window.alert("Username or password incorrect");
 			console.warn("PASSWrong");
+		}
 		}else{
 		window.alert("Username or password incorrect");
 		console.warn("USERWrong");
