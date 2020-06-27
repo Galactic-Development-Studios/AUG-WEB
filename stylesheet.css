@@ -35,10 +35,10 @@ body{
   margin: -75px 0 0 -75px;
   border: 16px solid #f3f3f3;
   border-radius: 50%;
-  border-top: 16px solid gold;
-  border-left: 16px solid gold;
-  border-bottom: 16px solid gold;
-  border-right: 16px solid black;
+  border-top: 16px solid rgb(153, 0, 255);
+  border-left: 16px solid rgb(153, 0, 245);
+  border-bottom: 16px solid rgb(153, 0, 205);
+  border-right: 16px solid rgb(153, 0, 165);
   width: 120px;
   height: 120px;
   -webkit-animation: spin 2s linear infinite;
@@ -60,7 +60,7 @@ body{
 width: 100%;
 background-color: black;
 position: absolute;
-border-bottom: 5px solid gold;
+border-bottom: 5px solid rgb(153, 0, 255);
 top: 0%;
 padding: none;
 }
@@ -72,10 +72,12 @@ padding: 1%;
 transition: 0.5s;
 text-align: center;
 color: white;
+-webkit-transition: background-image 1s ease-in-out;
+transition: background-image 1s ease-in-out;
 }
 #navLink:hover{
-	background-color: gold;
-	color: black;
+	background-image: linear-gradient(225deg, rgb(153, 0, 255) 0%, rgb(204, 0, 255) 39%, rgb(255, 0, 255) 100%);
+	
 }
 #navLinkActive{
 text-decoration: none;
@@ -84,8 +86,8 @@ width: 22.3%;
 padding: 1%;
 transition: 0.5s;
 text-align: center;
-color: black;
-background-color: gold;
+color: white;
+background-image: linear-gradient(225deg, rgb(153, 0, 255) 0%, rgb(204, 0, 255) 39%, rgb(255, 0, 255) 100%);
 }
 /*Home page*/
 #page{
@@ -97,7 +99,7 @@ background-color: gold;
 }
 .joinButton{
 	background-color: rgba(0,0,0,0.5);
-  border: 5px solid gold;
+  border: 5px solid rgb(153, 0, 255);
   color: white;
   padding: 20px;
   text-align: center;
@@ -113,8 +115,8 @@ background-color: gold;
   margin-left: auto;
 }
 .joinButton:hover{
-	background-color: rgba(255,215,0,0.5);
-	zoom: 1.25;
+	background-image: linear-gradient(225deg, rgb(153, 0, 255) 0%, rgb(204, 0, 255) 39%, rgb(255, 0, 255) 100%);
+	zoom:1.1;
 }
 
 #homePageBody{
@@ -345,7 +347,7 @@ background-size: cover;
 /* Game List */
 #gameList{
 	display: none;
-	border: 5px solid gold;
+	border: 5px solid rgb(153, 0, 255);
 	border-radius: 15px;
 	width: 40vw;
 	padding:2.5vw;
@@ -422,7 +424,7 @@ background-size: cover;
 	transition: 0.5s;
 }
 #username:hover{
-	border: 4px solid gold;
+	border: 4px solid rgb(153, 0, 255);
 	zoom:1.25;
 		margin-left: auto;
 	margin-right: auto;
@@ -440,7 +442,7 @@ background-size: cover;
 	transition: 0.5s;
 }
 #password:hover{
-	border: 4px solid gold;
+	border: 4px solid rgb(153, 0, 255);
 	zoom:1.25;
 
 	margin-left: auto;
@@ -448,7 +450,7 @@ background-size: cover;
 }
 #resetPassForm{
 	display: none;
-	border: 5px solid gold;
+	border: 5px solid rgb(153, 0, 255);
 	border-radius: 5%;
 	width: 40vw;
 	padding:2.5vw;
@@ -487,7 +489,7 @@ background-color: grey;
 border-radius: 12px;
 }
 #UCGameIconContainer:hover{
-background-color: gold;
+background-color: rgb(153, 0, 255);
 }
 #UCGameIconContainer p{
 	text-align: center;
@@ -497,7 +499,7 @@ background-color: gold;
 
 .resourceButton{
 		background-color: rgba(0,0,0,0.5);
-  border: 5px solid gold;
+  border: 5px solid rgb(153, 0, 255);
   color: white;
   padding: 20px;
   text-align: center;
@@ -513,7 +515,7 @@ background-color: gold;
   margin-left: auto;
 }
 .resourceButton:hover{
-	background-color: rgba(255,215,0,0.5)
+	background-color: rgb(204, 0, 255);
 }
 #resourceRow{
 	display: block;
