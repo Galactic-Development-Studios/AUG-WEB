@@ -127,9 +127,10 @@ font-size: 20px;
 }
 #applyBtn{
 	width: 35%;
+	height: 100px;
 }
 #applyBtn h2{
-	font-size: 200%;
+	font-size: 150%;
   background: -webkit-linear-gradient(225deg, rgb(153, 0, 255) 0%, rgb(255, 0, 255) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
