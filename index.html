@@ -1,71 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166892379-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-166892379-1');
-</script>
-	<title>AUG</title>
+	<title>Aussie Games</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<meta charset="utf-8">
-	<meta name="description" content="We are Aussie Games, a group developing a large community for many games.">
-	<meta name="theme-color" content="#FFD700">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png?v=Kmz8rqkBR6">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png?v=Kmz8rqkBR6">
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png?v=Kmz8rqkBR6">
-<link rel="manifest" href="/assets/images/favicons/site.webmanifest?v=Kmz8rqkBR6">
-<link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg?v=Kmz8rqkBR6" color="#cc00ff">
-<link rel="shortcut icon" href="/assets/images/favicons/favicon.ico?v=Kmz8rqkBR6">
-<meta name="apple-mobile-web-app-title" content="AUG">
-<meta name="application-name" content="AUG">
-<meta name="msapplication-TileColor" content="#cc00ff">
-<meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml?v=Kmz8rqkBR6">
-<meta name="theme-color" content="#cc00ff">
 </head>
-<body onload="timeOutCheck()">
-	<div id="loader" style="display: block;" ></div>
-	<div id="page" style="display: none;">
-	<!-- Navbar -->
-	<div id="nav">
-		<a href="index.html" id="navLinkActive"><div id="navItemActive">Home</div></a>
-		<a href="about.html" id="navLink"><div id="navItem">About</div></a>
-		<a href="join.html" id="navLink"><div id="navItem">Join</div></a>
-		<a href="userCenter.html" id="navLink"><div id="navItem">User Center</div></a>
+<body>
+	<nav id="navbar">
+		<a class="navLink" href="index.html"><div class="navItem">AUG</div></a>
+		<a class="navLink"><div class="navItem" id="demoTestText">About</div></a>
+		<a class="navLink"><div class="navItem">Join</div></a>
+		<a class="navLink"><div class="navItem">Contact</div></a>
+		<a class="navLink"><div class="navItem">User Center</div></a>
+		<img src="assets/images/logo.webp" class="navImg">
+	</nav>
+	<div class="bubbleContainer" id="firstElelement">
+	<div class="bubbleL">
+		<h1>Welcome</h1>
+		<p>Welcome to Aussie Games! We are a developing gaming community that features both indie and mainstream games. With an enthusiastic, friendly and supportive member base combined with world class Community Support Officers we can help you find the community for you and support you along the way.</p>
 	</div>
-	<!-- Main Body -->
-	<div id="homePageBodySpecial" class="homePageBody1 firstDiv">
-		<h1>Aussie Games</h1><br>
-		<p>Welcome to Aussie Games! We are a developing gaming community that features both indie and mainstream games.<br>
-With an enthusiastic, friendly and supportive member base combined with world class Community Support Officers we can help you find the<br> community for you and support you along the way.</p>
-		<button class="joinButton" onclick="window.location.href='join.html'">Join us</button><br>
+	<div class="bubbleR" id="bubbleLogo"></div>
 	</div>
-	<div id="homePageBodySpecial" class="homePageBody2">
-		<h2 id="close1">What we offer</h2><br>
-		<p id="close2">We offer great, inclusive communities, and competent staff for many of the games you know.</p>
-		<button id="close3" class="joinButton" onclick="showGameList()">What do we offer</button>
-		<div id="gameList" onclick="closeGameList()">
+	<div class="bubbleContainer">
+	<div class="bubbleL">
+		<h1>What games do we support?</h1>
+		<p>Aussie Games has a wide variety supported communities. We aim to let many people enjoy the AUG experience.</p>
+	</div>
+	<div class="bubbleR">
+		<h1>Supported Games</h1>
+		<button class="button" onclick="showSupportedGames()">Show Games</button>
+	</div>
+	<div id="supportedGames" onclick="hideSupportedGames()">
+		<p>Click here to close</p>
+		<div class="supportedGamesGame">
+		<img src="assets/images/icons/FL.webp" class="gameImg"><p>Flashing Lights</p>
+		</div>
+		<div class="supportedGamesGame">
+		<img src="assets/images/icons/GM.webp" class="gameImg"><p>Garry's Mod</p>
+		</div>
+		<div class="supportedGamesGame">
+		<img src="assets/images/icons/IF.webp" class="gameImg"><p>Infinite Flight</p>
+		</div>
+		<div class="supportedGamesGame">
+		<img src="assets/images/icons/KSP.webp" class="gameImg"><p>KSP</p>
+		</div>
+		<div class="supportedGamesGame">
+		<img src="assets/images/icons/MC.webp" class="gameImg"><p>Minecraft</p>
+		</div>
+		<div class="supportedGamesGame">
+		<img src="assets/images/icons/RB.webp" class="gameImg"><p>Roblox</p>
+		</div>
+		<div class="supportedGamesGame">
+		<img src="assets/images/icons/SM.webp" class="gameImg"><p>Survivng Mars</p>
 		</div>
 	</div>
 	</div>
-	<script type="text/javascript" src="script.js"></script>
-	<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5ec0705a967ae56c521a7983/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+
+<script type="text/javascript" src="scroll.js"></script>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
