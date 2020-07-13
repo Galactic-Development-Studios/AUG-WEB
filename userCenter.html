@@ -1,103 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166892379-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-166892379-1');
-</script>
-	<title>AUG</title>
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<meta charset="utf-8">
-	<meta name="description" content="We are Aussie Games, a group developing a large community for many games.">
-	<meta name="theme-color" content="#FFD700">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png?v=Kmz8rqkBR6">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png?v=Kmz8rqkBR6">
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png?v=Kmz8rqkBR6">
-<link rel="manifest" href="/assets/images/favicons/site.webmanifest?v=Kmz8rqkBR6">
-<link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg?v=Kmz8rqkBR6" color="#cc00ff">
-<link rel="shortcut icon" href="/assets/images/favicons/favicon.ico?v=Kmz8rqkBR6">
-<meta name="apple-mobile-web-app-title" content="AUG">
-<meta name="application-name" content="AUG">
-<meta name="msapplication-TileColor" content="#cc00ff">
-<meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml?v=Kmz8rqkBR6">
-<meta name="theme-color" content="#cc00ff">
+	<title>This is going under updates</title>
 </head>
-<body onload="timeOutCheck()">
-	<div id="loader" style="display: block;" ></div>
-	<div id="page" style="display: none;">
-	<!-- Navbar -->
-	<div id="nav">
-		<a href="index.html" id="navLink"><div id="navItem">Home</div></a>
-		<a href="about.html" id="navLink"><div id="navItem">About</div></a>
-		<a href="join.html" id="navLink"><div id="navItem">Join</div></a>
-		<a href="userCenter.html" id="navLinkActive"><div id="navItemActive">User Center</div></a>
-	</div>
-	<!-- Main Body -->
-	<div id="homePageBodySpecial" class="homePageBody6 firstDiv">
-		<h1>Login to your User Center</h1><br>
-		<form onsubmit="return false" id="loginForm">
-			<label for="username">User ID</label><br>
-			<input type="text" name="username" id="username"><br><br>
-			<label for="password">Password</label><br>
-			<input type="password" name="password" id="password">
-			<br><br>
-			<button class="joinButton" type="submit" onclick="lookForUser()">Login</button>
-		</form><br>
-		<a href="assets/forms/UCSignUp.html" id="inContentLink">Sign Up</a>
-	</div>
-	<div id="UserCenter" class="homePageBody7">
-		<h1 style="display: inline;">Hello, </h1><h2 style="display: inline;" id="userNameHereHeader">Why dont I change</h2><br>
-	<br>
-	<h3>You are in these groups,<br> click on them to access resouces</h3>
-	<div id="iconContainer">
-	<a href="gamePagesUc/FL.html" id="UCGameIconA1" class="UCGameIconA"><div id="UCGameIconContainer"><img src="assets/images/gameIcons/FL.webp" class="UCGameIconImg"><br><p id="inContentLink">Flashing Lights</p></div></a>
-	<a href="gamePagesUc/GMOD.html" id="UCGameIconA2" class="UCGameIconA"><div id="UCGameIconContainer"><img src="assets/images/gameIcons/GM.webp" class="UCGameIconImg"><br><p id="inContentLink">Garry's Mod</p></div></a>
-	<a href="gamePagesUc/IF.html" id="UCGameIconA3" class="UCGameIconA"><div id="UCGameIconContainer"><img src="assets/images/gameIcons/IF.webp" class="UCGameIconImg"><br><p id="inContentLink">Infinite Flight</p></div></a>
-	<a href="gamePagesUc/KSP.html" id="UCGameIconA4" class="UCGameIconA"><div id="UCGameIconContainer"><img src="assets/images/gameIcons/KSP.webp" class="UCGameIconImg"><br><p id="inContentLink">Kerbal Space Program</p></div></a>
-	<a href="gamePagesUc/MC.html" id="UCGameIconA5" class="UCGameIconA"><div id="UCGameIconContainer"><img src="assets/images/gameIcons/MC.webp" class="UCGameIconImg"><br><p id="inContentLink">Minecraft</p></div></a>
-	<a href="gamePagesUc/RB.html" id="UCGameIconA6" class="UCGameIconA"><div id="UCGameIconContainer"><img src="assets/images/gameIcons/RB.webp" class="UCGameIconImg"><br><p id="inContentLink">Roblox</p></div></a>
-	<a href="gamePagesUc/SM.html" id="UCGameIconA7" class="UCGameIconA"><div id="UCGameIconContainer"><img src="assets/images/gameIcons/SM.webp" class="UCGameIconImg"><br><p id="inContentLink">Surviving Mars</p></div></a>
-	<a href="gamePagesUc/staff.html" id="UCGameIconA8" class="UCGameIconA"><div id="UCGameIconContainer"><img src="assets/images/gameIcons/staff.webp" class="UCGameIconImg"><br><p id="inContentLink">Staff</p></div></a>
-	</div>
-	<button class="joinButton" onclick="resetPasswordShow()">Ask for a password reset</button>
-	<p style="font-size: 10px;">This may take some time, around 48 hours.</p>
-	<div id="resetPassForm" >
-		<form method="POST" data-netlify="true" onsubmit="resetPasswordHide()" name="resetPassForm">
-			<label> Username:
-			<input type="text" name="resetUser" required>
-			</label><br>
-			<label> Current Password:
-			<input type="text" name="currentPassword" required>
-			</label><br>
-			<label> New Password:
-			<input type="password" name="newPassword" required>
-			</label><br><br>
-
-			<input type="submit" name="submit">
-		</form>
-	</div>
-	</div>
-	</div>
-	<script type="text/javascript" src="script.js"></script>
-	<script type="text/javascript" src="uc.js"></script>
-	<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5ec0705a967ae56c521a7983/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+<body>
+	<h1>We are doing upgrades on the user center</h1>
+	<p>Apologies for the interuption, we are upgrading our user center to make the experience easier for you.</p>
 </body>
 </html>
