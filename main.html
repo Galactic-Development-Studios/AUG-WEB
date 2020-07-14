@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AUG UC: Home</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="contentContainer">
+		<div class="contentDiv">
+			<h1 id="userNameWelcome"></h1><br><p style="text-decoration: underline;" onclick="logOut()">Log out</p><br><br>
+			<div class="List">
+				<div class="gameListItem" onclick="window.location.href='gamePages/fl.html'">
+					<img src="assets/gameResources/icons/FL.webp" class="listImg"><br><br><h4 class="listText">Flashing Lights</h4>
+				</div>
+				<div class="gameListItem" onclick="window.location.href='gamePages/gm.html'">
+					<img src="assets/gameResources/icons/GM.webp" class="listImg"><br><br><h4 class="listText">Garry's Mod</h4>
+				</div>
+				<div class="gameListItem" onclick="window.location.href='gamePages/if.html'">
+					<img src="assets/gameResources/icons/IF.webp" class="listImg"><br><br><h4 class="listText">Infinite Flight</h4>
+				</div>
+				<div class="gameListItem" onclick="window.location.href='gamePages/ksp.html'">
+					<img src="assets/gameResources/icons/KSP.webp" class="listImg"><br><br><h4 class="listText">KSP</h4>
+				</div>
+				<div class="gameListItem" onclick="window.location.href='gamePages/mc.html'">
+					<img src="assets/gameResources/icons/MC.webp" class="listImg"><br><br><h4 class="listText">Minecraft</h4>
+				</div>
+				<div class="gameListItem" onclick="window.location.href='gamePages/rb.html'">
+					<img src="assets/gameResources/icons/RB.webp" class="listImg"><br><br><h4 class="listText">Roblox</h4>
+				</div>
+				<div class="gameListItem" onclick="window.location.href='gamePages/re.html'">
+					<img src="assets/gameResources/icons/RE.webp" class="listImg"><br><br><h4 class="listText">Reentry</h4>
+				</div>
+				<div class="gameListItem" onclick="window.location.href='gamePages/sm.html'">
+					<img src="assets/gameResources/icons/SM.webp" class="listImg"><br><br><h4 class="listText">Surviving Mars</h4>
+				</div>
+				<div class="gameListItem" id="staffGroupLI"  onclick="window.location.href='gamePages/staff.html'">
+					<img src="assets/gameResources/icons/staff.webp" class="listImg"><br><br><h4 class="listText">Staff</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="personalisation.js" onload="checkIfStaff()"></script>
+</body>
+</html>
