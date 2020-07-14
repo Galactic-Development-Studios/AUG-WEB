@@ -14,6 +14,20 @@ function hideStaffGroup(){
  	if (localStorage.getItem("UID") == "SamSam"){
  		isStaff = true;
  		console.log("isStaff");
+ 	}else if(localStorage.getItem("UID") == "Galaxy"){
+ 		isStaff = true;
+ 		console.log("isStaff");
+ 	}else if(localStorage.getItem("UID") == "Teddy9264"){
+ 		isStaff = true;
+ 		console.log("isStaff");
+ 	}
+ 	else if(localStorage.getItem("UID") == "davo2212"){
+ 		isStaff = true;
+ 		console.log("isStaff");
+ 	}
+ 	else if(localStorage.getItem("UID") == "Gubbys"){
+ 		isStaff = true;
+ 		console.log("isStaff");
  	}else{
  		isStaff = false;
  		console.log("isNotStaff");
