@@ -1,41 +1,47 @@
 //check if user is logged in correctly
-if (localStorage.getItem("UID") == null || localStorage.getItem("UID") == "") {
+if (localStorage.getItem("Code") == null || localStorage.getItem("Code") == "") {
 	window.location.href="index.html";
 }
-var userName = localStorage.getItem("UID");
-document.getElementById("userNameWelcome").innerHTML = "Welcome, " + userName;
-var isStaff;
-function hideStaffGroup(){
-	if (isStaff == false){
-		document.getElementById("staffGroupLI").style.display = "none";
+function checkStaff(){
+	stateText = document.getElementById("appStaff");
+	code = localStorage.getItem("Code");
+	if (code == "ABCD"){
+		stateText.innerHTML = "Galaxy";
+	} else {
+		ErrorAlert = window.confirm("We were unable to find you code, please log out and re log in.");
+		if (ErrorAlert == true) {
+			window.location.href = "index.html";
+		} else{
+			return
+		}
 	}
 }
- function checkIfStaff(){
- 	if (localStorage.getItem("UID") == "SamSam"){
- 		isStaff = true;
- 		console.log("isStaff");
- 	}else if(localStorage.getItem("UID") == "Galaxy"){
- 		isStaff = true;
- 		console.log("isStaff");
- 	}else if(localStorage.getItem("UID") == "Teddy9264"){
- 		isStaff = true;
- 		console.log("isStaff");
- 	}
- 	else if(localStorage.getItem("UID") == "davo2212"){
- 		isStaff = true;
- 		console.log("isStaff");
- 	}
- 	else if(localStorage.getItem("UID") == "Gubbys"){
- 		isStaff = true;
- 		console.log("isStaff");
- 	}else{
- 		isStaff = false;
- 		console.log("isNotStaff");
- 		hideStaffGroup();
- 	}
- }
+function checkState(){
+	stateText = document.getElementById("appStatus");
+	code = localStorage.getItem("Code");
+	if (code == "ABCD"){
+		stateText.innerHTML = "Approved";
+		checkStaff();
+	} else {
+		ErrorAlert = window.confirm("We were unable to find you code, please log out and re log in.");
+		if (ErrorAlert == true) {
+			window.location.href = "index.html";
+		} else{
+			return
+		}
+	}
+}
+function addUserName(){
+	textArea = document.getElementById("userNameWelcome");
+	code = localStorage.getItem("Code");
+	if (code == "ABCD") {
+		textArea.innerHTML = "Welcome, Galaxy";
+		checkState()
+	}else{
+		return;
+	}
+}
 function logOut(){
-	localStorage.setItem("UID","");
-	localStorage.setItem("PWD","");
+	localStorage.setItem("Code","");
 	window.location.href="index.html";
 }
