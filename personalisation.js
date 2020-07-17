@@ -1,5 +1,5 @@
 //check if user is logged in correctly
-if (localStorage.getItem("UID") == null) {
+if (localStorage.getItem("UID") == null || localStorage.getItem("UID") == "") {
 	window.location.href="index.html";
 }
 var userName = localStorage.getItem("UID");
