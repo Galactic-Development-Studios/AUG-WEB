@@ -11,7 +11,7 @@ body{
 	font-family: "Varela Round", serif;
 }
 #loginContainer{
-	background-color: rgb(40,40,40);
+	background:linear-gradient(to bottom, #000A80 0%, #0062FF 50%, #00FFFF 100%);
 	width: 50vw;
 	height: 75vh;
 	position: absolute;
@@ -55,7 +55,7 @@ body{
 	outline: none;
 }
 .contentContainer{
-	background-color: rgb(40,40,40);
+	background:linear-gradient(to bottom, #000A80 0%, #0062FF 50%, #00FFFF 100%);
 	width: 75vw;
 	height: 75vh;
 	position: absolute;
@@ -63,6 +63,13 @@ body{
 	padding: 1vw;
 	border-radius: 15px;
 	top: 10vh;overflow-y: scroll;
+}
+.contentContainer::-webkit-scrollbar {
+  display: none;
+}
+.contentContainer {
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
 }
 .contentDiv{
 	position: absolute;
@@ -73,21 +80,35 @@ body{
 }
 .List{
 	width: 75%;
-	background-color: rgb(60,60,60);
+	background-color: transparent;
 	position: absolute;
 	left: 12.5%;
 	height: 110%;
-	bottom: -50%;
+	bottom: -60%;
 	overflow-y: scroll;
 }
 .RList{
 	width: 80%;
-	background-color: rgb(60,60,60);
+	background-color: transparent;
 	position: absolute;
 	left: 10%;
 	height: 110%;
 	bottom: -50.5%;
 	overflow-y: scroll;
+}
+.List::-webkit-scrollbar {
+  display: none;
+}
+.List {
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+}
+.RList::-webkit-scrollbar {
+  display: none;
+}
+.RList {
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
 }
 .gameListItem{
 	width: 20%;
@@ -101,6 +122,7 @@ body{
 	margin-bottom: 2.5%;
 	margin-left: 5%;
 	margin-right: 5%;
+	background-color: rgba(0,0,0,0.5);
 	border:solid 3px rgb(40,40,40);
 	transition: 0.5s;
 }
@@ -119,7 +141,7 @@ body{
 	border:solid 3px transparent;
 	border-radius: 15px;
 	height: 33%;
-	background-color: rgb(100,100,100);
+	background-color: rgba(0,0,0,0.5);
     width: 45%;
     margin:1%;
     transition: 0.5s;
@@ -138,6 +160,19 @@ body{
 	background-color: red !important;
 	border:solid 3px red !important;
 }
+::placeholder {
+  color: rgb(50,50,50);
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: rgb(50,50,50);
+}
+
+::-ms-input-placeholder {
+  color: rgb(50,50,50);
+}
+
 @media only screen and (max-width: 786px) {
   .gameListItem {
     width: auto;
