@@ -57,6 +57,7 @@ nav button:hover{
 .navActive{
 	background-color: blue;
 	color: white;
+	z-index: 257;
 }
 .NavbarL{
 	border-radius: 50px 0px 0px 50px;
@@ -66,4 +67,71 @@ nav button:hover{
 .NavbarR{
 	border-radius: 0px 50px 50px 0px;
 	float: right;
+}
+#mobileButton{
+	display: none;
+	width: 7.5vw;
+	height: 7.5vw;
+	border:none;
+	background-color: white;
+	border-radius: 5px;
+	position: absolute;
+	right: 40px;
+	top: 40px;
+}
+#mobileNavBar{
+	width: 30%;
+	height: 100%;
+	background-color: white;
+	position: absolute;
+	left: -30%;
+	display: none;
+	color: black;
+	text-align: center;
+	transition: 0.75s;
+	overflow-y: scroll;
+}
+#mobileNavBar button{
+	width: 100%;
+	height: 15%;
+	min-height: 40px;
+	border:none;
+	font-size: 150%;
+	line-height: 150%;
+	background-color: rgb(250,250,250);
+}
+footer{
+	width: 100%;
+	height: 10vh;
+	position: absolute;
+	bottom: 0px;
+	background-color: white;
+	color: black;
+	overflow-y: hidden;
+}
+footer div{
+	width: 25%;
+	height: 10vh;
+	float: left;
+	margin-left: 15px;
+	margin-right: 15px;
+	display: inline-block;
+	border-right: solid 1px black;
+}
+footer a{
+	text-decoration: underline;
+	display: inline-block;
+	margin-left:5px;
+	margin-right:5px;
+}
+@media only screen and (max-width: 610px) {
+	nav{
+		display: none;
+	}
+	#mobileButton{
+		display: block;
+	}
+	#mobileNavBar{
+		display: block;
+	}
 }
