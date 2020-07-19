@@ -18,7 +18,16 @@ body{
 	left: 25vw;
 	padding: 30px;
 	border-radius: 15px;
-	top: 10vh;overflow-y: scroll;
+	top: 10vh;
+	overflow-y: scroll;
+}
+#loginContainer::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */#loginContainer{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 #loginDiv{
 	position: absolute;
