@@ -1,65 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166892379-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-166892379-1');
-</script>
-	<title>AUG</title>
+	<title>Aussie Games</title>
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<meta charset="utf-8">
-	<meta name="description" content="We are Aussie Games, a group developing a large community for many games.">
-	<meta name="theme-color" content="#FFD700">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png?v=Kmz8rqkBR6">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png?v=Kmz8rqkBR6">
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png?v=Kmz8rqkBR6">
-<link rel="manifest" href="/assets/images/favicons/site.webmanifest?v=Kmz8rqkBR6">
-<link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg?v=Kmz8rqkBR6" color="#cc00ff">
-<link rel="shortcut icon" href="/assets/images/favicons/favicon.ico?v=Kmz8rqkBR6">
-<meta name="apple-mobile-web-app-title" content="AUG">
-<meta name="application-name" content="AUG">
-<meta name="msapplication-TileColor" content="#cc00ff">
-<meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml?v=Kmz8rqkBR6">
-<meta name="theme-color" content="#cc00ff">
+	<meta charset="UTF-8">
+  <meta name="description" content="Whether you looking for new friends, a place to share, or looking to explore new games, Aussie Games is your place.">
+  <meta name="keywords" content="Games, Gaming, Australia, Aussie Games, Aussie">
+  <meta name="author" content="Aussie Games">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body onload="timeOutCheck()">
-	<div id="loader" style="display: block;" ></div>
-	<div id="page" style="display: none;">
-	<!-- Navbar -->
-	<div id="nav">
-		<a href="index.html" id="navLink"><div id="navItem">Home</div></a>
-		<a href="about.html" id="navLink"><div id="navItem">About</div></a>
-		<a href="join.html" id="navLinkActive"><div id="navItemActive">Join</div></a>
-		<a href="https://usercenter.aussie-games.online" id="navLink"><div id="navItem">User Center</div></a>
+<body>
+	<!--Navbar-->
+	<button id="mobileButton" onclick="toggleMobNavBar()"><img src="assets/images/icons/list.svg"></button>
+	<div id="mobileNavBar"><br><br>
+		<h3>Aussie Games</h3>
+		<button>Home</button>
+		<button>Why Us</button>
+		<button>Join</button>
+		<button>Safety</button>
 	</div>
-	<!-- Main Body -->
-	<div id="homePageBodySpecial" class="homePageBody5 firstDiv">
-		<h1>Join the Aussie Games community</h1><br>
-		<p>Join the Aussie Games community and have a fun, enjoyable and friendly gaming experience. We support a wide variety of games and communities for each.</p><br>
-<button class="joinButton" onclick="window.open('https://www.guilded.gg/r/zz1EDa9Omj?i=LmperQkA', '_blank')">Apply</button><br>
-<iframe id="gWidget1" src="https://www.guilded.gg/canvas_index.html?route=%2Fcanvas%2Fembed%2Fteamcard%2F1EDa9Omj&size=large" width="553" height="262" frameborder="0" scrolling="no"></iframe>
-<iframe id="gWidget2"src="https://www.guilded.gg/canvas_index.html?route=%2Fcanvas%2Fembed%2Fteamcard%2F1EDa9Omj" width="268" height="357" frameborder="0" scrolling="no"></iframe>
-	</div>
-	</div>
+	<nav>
+		<button onclick="window.location.href='index.html'" class="NavbarL">Home</button>
+		<button onclick="window.location.href='why.html'">Why Us</button>
+		<button onclick="window.location.href='join.html'" class="navActive">Join</button>
+		<button onclick="window.location.href='safety.html'" class="NavbarR">Safety</button>
+	</nav>
+	<div id="joinBox"><h1>Join AUG</h1><br><p>We can’t wait to have you as part of the team. Aussie Games is dedicated to your experience. So please let us know if there is anything we can do.</p><br><iframe id="largeWidget" src="https://www.guilded.gg/canvas_index.html?route=%2Fcanvas%2Fembed%2Fteamcard%2F1EDa9Omj&size=large" width="100%" height="262" frameborder="0" scrolling="no"></iframe><iframe id="smallWidget" src="https://www.guilded.gg/canvas_index.html?route=%2Fcanvas%2Fembed%2Fteamcard%2F1EDa9Omj" width="100%" height="357" frameborder="0" scrolling="no"></iframe></div>
 	<script type="text/javascript" src="script.js"></script>
-	<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5ec0705a967ae56c521a7983/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
 </body>
 </html>

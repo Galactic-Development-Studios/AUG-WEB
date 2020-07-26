@@ -7,7 +7,7 @@ function toggleMobNavBar(){
 		state = "shown";
 		console.log("openMobNav");
 	}else if (state == "shown"){
-		navbar.style.left = "-30%";
+		navbar.style.left = "-50%";
 		state = "hidden";
 		console.log("closingMobNav");
 }
