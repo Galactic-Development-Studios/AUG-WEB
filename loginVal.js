@@ -1,90 +1,81 @@
-var UIDData;
-var PWDData;
-var UIDInput = document.getElementById("formUID");
-var PWDInput = document.getElementById("formPWD");
-function saveDataPerm(){
-	localStorage.setItem("UID", UIDData);
-	localStorage.setItem("PWD", PWDData);
-	window.location.href="main.html";
+//formInputs
+var UIDInput = document.getElementById('formUID');
+var PWDInput = document.getElementById('formPWD');
+//TempData
+var tempUID;
+var tempPWD;
+//localStorage
+var savedUID = localStorage.getItem("UIDSaved");
+var savedPWD = localStorage.getItem("PWDSaved");
+//encryption functions
+function base64Enc(x){
+	var eX = window.btoa(x);
+	return eX;
 }
-function checkIfInputMatches(){
-	//Make sure to account for extra "else" statment at end for incorrect UID, end copy at else
-	//begin copy here
-	if (UIDData == "SamSam"){
-		if (PWDData == "SamSam"){
-			console.log("SamSam logged in");
-			saveDataPerm();
-		}else{
-			window.alert("Incorrect Username or Password");
-			console.log("Password wrong");
-		}
-	}else if (UIDData == "Galaxy"){
-		if (PWDData == "GalAUG5121"){
-			console.log("Galaxy logged in");
-			saveDataPerm();
-		}else{
-			window.alert("Incorrect Username or Password");
-			console.log("Password wrong");
-		}
-	}else if (UIDData == "Teddy9264"){
-		if (PWDData == "No comment"){
-			console.log("Teddy logged in");
-			saveDataPerm();
-		}else{
-			window.alert("Incorrect Username or Password");
-			console.log("Password wrong");
-		}
+function base64Dec(x){
+	var dX = window.atob(x);
+	return dx;
+}
+//checkIfInputsAreValid
+function checkInputVal(){
+	if (UIDInput.value == null || UIDInput.value == ""){
+		window.alert("You must input a Username");
 	}
-	else if (UIDData == "davo2212"){
-		if (PWDData == "Maxie2014"){
-			console.log("Davo logged in");
-			saveDataPerm();
-		}else{
-			window.alert("Incorrect Username or Password");
-			console.log("Password wrong");
-		}
-	}
-	else if (UIDData == "Gubbys"){
-		if (PWDData == "Nicho221539"){
-			console.log("Gubby logged in");
-			saveDataPerm();
-		}else{
-			window.alert("Incorrect Username or Password");
-			console.log("Password wrong");
-		}
-	}
-	else if(localStorage.getItem("UID")==""){
-	return
+	else if (PWDInput.value == null || PWDInput.value == ""){
+		window.alert("You must input a Password");
 	}
 	else{
-		window.alert("Incorrect Username or Password");
-		console.log("Incorrect UID");
+		tempUID = base64Enc(UIDInput.value);
+		tempPWD = base64Enc(PWDInput.value);
+		checkValLogin();
 	}
 }
-function saveDataTemp(){
-	UIDData = document.getElementById("formUID").value;
-	PWDData = document.getElementById("formPWD").value;
-	checkIfInputMatches();
+function saveDataPerm(){
+	localStorage.setItem("UIDSaved",tempUID);
+	localStorage.setItem("PWDSaved",tempPWD);
+	console.log("dataSaved");
+	window.location.href="main.html";
 }
-
-function checkIfInputsValid(){
-	if (UIDInput == ""||UIDInput == null){
-		window.alert("You didn't enter a username");
-	}else if (PWDInput == "" || PWDInput == null){
-		window.alert("You didn't enter a password");
+function checkValLogin(){
+	if (tempUID == "U2FtU2Ft"){
+		if (tempPWD == "U2FtU2Ft"){
+			saveDataPerm();
+		}
+	}else
+	if (tempUID == "R2FsYXh5"){
+		if (tempPWD == "R2FsYXh5NTEyMUFVRw=="){
+			saveDataPerm();
+		}
+	}else
+	if (tempUID == "VGVkZHk5MjY0"){
+		if (tempPWD == "Tm8gY29tbWVudA=="){
+			saveDataPerm();
+		}
+	}else
+	if (tempUID == "ZGF2bzIyMTI="){
+		if (tempPWD == "TWF4aWUyMDE0"){
+			saveDataPerm();
+		}
+	}else
+	if (tempUID == "R3ViYnlz"){
+		if (tempPWD == "TmljaG8yMjE1Mzk="){
+			saveDataPerm();
+		}
 	}else{
-		saveDataTemp();
+		console.warn("unknownUser");
+		window.alert("Your username or password is incorrect");
 	}
 }
-function checkForPreviousEntry(){
-	prevUID = localStorage.getItem("UID");
-	prevPWD = localStorage.getItem("PWD");
-	if (localStorage.getItem("UID") != null){
-		UIDData = prevUID;
-		PWDData = prevPWD;
-		console.log("someone was here before");
-		checkIfInputMatches();
-	}else if (localStorage.getItem("UID") == "" || localStorage.getItem("UID") == null){
-		return;
+//Autologin
+function checkPrevLogin(){
+	if (localStorage.getItem("UIDSaved") != null && localStorage.getItem("UIDSaved") != ""){
+		tempUID = localStorage.getItem("UIDSaved");
+		tempPWD = localStorage.getItem("PWDSaved");
+		checkValLogin();
+	}else{
+		return
 	}
 }
+//Clear OutdatedStorage
+localStorage.setItem("UID",null);
+localStorage.setItem("PWD",null);

@@ -25,10 +25,10 @@
 			<p>Here you can log into the user center where you can acess all the resources for you favourite games.</p><br><br>
 			<label>Username: <input type="text" name="UID" class="formInputText" id="formUID" placeholder="Username"></label><br><br>
 			<label>Password: <input type="password" name="PWD" class="formInputText" id="formPWD" placeholder="Password"></label><br><br>
-			<button type="submit" onclick="saveDataTemp()" class="formButton">Submit</button>
+			<button type="submit" class="formButton" onclick="checkInputVal()">Submit</button>
 		</form>
 		</div>
 	</div>
-	<script type="text/javascript" src="loginVal.js" onload="checkForPreviousEntry()"></script>
+	<script type="text/javascript" src="loginVal.js" onload="checkPrevLogin()"></script>
 </body>
 </html>
