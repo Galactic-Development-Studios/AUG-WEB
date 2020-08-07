@@ -6,9 +6,13 @@
 	color: white;
 	font-family: 'Amaranth';
 }
+html{
+	overflow-x: hidden;
+}
 body{
 	background-color: black;
 	overflow-x: hidden;
+	position: relative;
 }
 #nav{
 	width: 90vw;
@@ -68,6 +72,7 @@ body{
 	width: 30%;
 	height: 25%;
 	overflow-y: scroll;
+	background-color: rgba(0,0,0,0.3);
 }
 #home2 .homeArticleText{
 	position: absolute;
@@ -79,11 +84,12 @@ body{
 	width: 30%;
 	height: 20%;
 	overflow-y: scroll;
+	background-color: rgba(0,0,0,0.3);
 }
 .homeArticleText button{
 	padding: 15px;
 	color: white;
-	width: 40%;
+	width: 75%;
 	background-color: transparent;
 	font-size: 30px;
 	border: 1px solid white;
@@ -92,4 +98,59 @@ body{
 .homeArticleText button:hover{
 	background-color: white;
 	color: black;
+}
+#mobNavButton{
+	background-color: white;
+	border: none;
+	width: 50px;
+	display: none;
+	height: 50px;
+	position: absolute;
+	right: 50px;
+	border-radius: 15px;
+	top: 50px;
+	z-index: 255;
+}
+#mobNavButton img{
+	height: 75%;
+	width: 75%;
+}
+#mobNav{
+	height: 90vh;
+	background-color: white;
+	position: absolute;
+	right: -101%;
+	width: 90%;
+	transition: ease-in-out 0.75s;
+	z-index: 255;
+	padding-left: 5vw;
+	padding-right: 5vw;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+}
+#mobNav h2{
+	color: black;
+}
+#mobNav ul{
+	list-style-type: none;
+}
+#mobNav li{
+	color: black;
+	font-size: 20px;
+	text-decoration: none;
+	border: 1px solid black;
+	width: auto;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+@media only screen and (max-width: 600px) {
+  #mobNavButton{
+    display: block;
+  }
+  #nav{
+  	display: none;
+  }
 }
