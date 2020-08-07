@@ -65,6 +65,9 @@ body{
 #launch1{
 	background-color: black;
 }
+#about1{
+	background-image: url(assets/images/IKSA.png);
+}
 #home1 .homeArticleText{
 	position: absolute;
 	left: 4%;
@@ -98,6 +101,18 @@ body{
 	border: solid 1px white;
 	width: 30%;
 	height: 20%;
+	overflow-y: scroll;
+	background-color: rgba(0,0,0,0.3);
+}
+#about1 .homeArticleText{
+	position: absolute;
+	right: 32.5%;
+	padding: 2.5%;
+	bottom: 30%;
+	text-align: center;
+	border: solid 1px white;
+	width: 30%;
+	height: 30%;
 	overflow-y: scroll;
 	background-color: rgba(0,0,0,0.3);
 }
