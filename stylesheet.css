@@ -62,6 +62,9 @@ body{
 #home2{
 	background-image: url(assets/images/background2.png);
 }
+#launch1{
+	background-color: black;
+}
 #home1 .homeArticleText{
 	position: absolute;
 	left: 4%;
@@ -79,6 +82,18 @@ body{
 	right: 4%;
 	padding: 15px;
 	bottom: 9%;
+	text-align: center;
+	border: solid 1px white;
+	width: 30%;
+	height: 20%;
+	overflow-y: scroll;
+	background-color: rgba(0,0,0,0.3);
+}
+#launch1 .homeArticleText{
+	position: absolute;
+	right: 32.5%;
+	padding: 2.5%;
+	bottom: 40%;
 	text-align: center;
 	border: solid 1px white;
 	width: 30%;
