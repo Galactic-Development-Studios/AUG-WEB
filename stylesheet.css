@@ -68,6 +68,9 @@ body{
 #about1{
 	background-image: url(assets/images/background3.png);
 }
+#jobs1{
+	background-image: url(assets/images/background4.jpg);
+}
 #home1 .homeArticleText{
 	position: absolute;
 	left: 4%;
@@ -113,6 +116,18 @@ body{
 	border: solid 1px white;
 	width: 30%;
 	height: 30%;
+	overflow-y: scroll;
+	background-color: rgba(0,0,0,0.4);
+}
+#jobs1 .homeArticleText{
+	position: absolute;
+	left: 0;
+	padding: 2.5%;
+	top: 15%;
+	text-align: center;
+	border: solid 0.1vw white;
+	width: 94.89%;
+	height: 5%;
 	overflow-y: scroll;
 	background-color: rgba(0,0,0,0.4);
 }
@@ -175,6 +190,57 @@ body{
 	margin-bottom: 15px;
 	padding-top: 15px;
 	padding-bottom: 15px;
+}
+#jobs{
+	position: absolute;
+	top: 30%;
+	width: 100vw;
+	height: 69vh;
+	overflow-y: scroll;
+	-ms-overflow-style: none;  /* IE and Edge */
+ 	 scrollbar-width: none; 
+}
+#jobs::-webkit-scrollbar {
+  display: none;
+}
+.jobsCard{
+	width: 98%;
+	position: relative;
+	height: 50%;
+	background-color: rgba(0,0,0,0.6);
+	border: 0.1vw solid white;
+	text-align: center;
+	display: inline-block;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	padding-left: 0.5vw;
+	padding-right: 0.5vw;
+	overflow-y: scroll;
+}
+.jobsCard h1{
+	font-size: 45px;
+}
+.jobsCard p{
+	overflow-y: scroll;
+	height: 50%;
+	font-size: 20px;
+}
+.jobsCard button{
+	width: 70%;
+	height: 20%;
+	position: absolute;
+	left: 14.5%;
+	bottom: 15px;
+	border: 1px solid white;
+	color: white;
+	font-size: 150%;
+	transition: 0.5s;
+	background-color: transparent;
+}
+.jobsCard button:hover{
+	background-color: white;
+	border: 1.5px solid rgb(0,0,0);
+	color: black;
 }
 @media only screen and (max-width: 600px) {
   #mobNavButton{
