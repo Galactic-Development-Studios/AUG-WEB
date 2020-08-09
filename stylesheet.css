@@ -65,6 +65,9 @@ body{
 #launch1{
 	background-image: url(assets/images/background5.png);
 }
+#launch2{
+	background-image: url(assets/images/background6.png);
+}
 #about1{
 	background-image: url(assets/images/background3.png);
 }
@@ -96,6 +99,18 @@ body{
 	background-color: rgba(0,0,0,0.3);
 }
 #launch1 .homeArticleText{
+	position: absolute;
+	left: 4%;
+	padding: 15px;
+	bottom: 9%;
+	text-align: center;
+	border: solid 1px white;
+	width: 30%;
+	height: 25%;
+	overflow-y: scroll;
+	background-color: rgba(0,0,0,0.3);
+}
+#launch2 .homeArticleText{
 	position: absolute;
 	left: 4%;
 	padding: 15px;
