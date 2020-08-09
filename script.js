@@ -16,4 +16,3 @@ function closeMobNav(){
 	mobNavButton.style.display = "block";
 	window.scrollTo(0,0);
 }
-
