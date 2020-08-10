@@ -148,6 +148,11 @@ body{
 #about2 .homeArticleText h3{
 	display: inline-block;
 }
+#about2 .homeArticleText img{
+	position: relative;
+	bottom: 0px;
+	height: 50%;
+}
 #about3 .homeArticleText{
 	position: absolute;
 	left: 12.5%;
