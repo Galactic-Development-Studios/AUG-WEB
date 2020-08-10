@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 *{
 	margin: 0px;
 	padding: 0px;
-	color: white;
-	font-family: 'Amaranth';
+	font-family: 'Poppins';
 }
 html{
 	overflow-x: hidden;
 }
 body{
-	background-color: black;
+	background:linear-gradient(to bottom, #000A80 0%, #0062FF 50%, #00FFFF 100%);
 	overflow-x: hidden;
 	position: relative;
+		color: white;
 }
 #nav{
 	width: 90vw;
@@ -54,85 +54,136 @@ body{
 	height: 100vh;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-color: black;
 	position: relative;
-}
-#home1{
-	background-image: url(assets/images/background1.jpg);
+	background: transparent;
 }
 #home2{
-	background-image: url(assets/images/background2.png);
-}
-#launch1{
-	background-image: url(assets/images/background5.png);
-}
-#launch2{
-	background-image: url(assets/images/background6.png);
-}
-#about1{
-	background-image: url(assets/images/background3.png);
-}
-#jobs1{
-	background-image: url(assets/images/background4.jpg);
+	
 }
 #home1 .homeArticleText{
 	position: absolute;
-	left: 4%;
+	left: 35%;
 	padding: 15px;
-	bottom: 9%;
+	bottom: 35%;
 	text-align: center;
-	border: solid 1px white;
 	width: 30%;
-	height: 25%;
+	height: 35%;
 	overflow-y: scroll;
-	background-color: rgba(0,0,0,0.3);
+	background-color: transparent;
 }
-#home2 .homeArticleText{
-	position: absolute;
-	right: 4%;
-	padding: 15px;
-	bottom: 9%;
-	text-align: center;
-	border: solid 1px white;
-	width: 30%;
-	height: 20%;
-	overflow-y: scroll;
-	background-color: rgba(0,0,0,0.3);
+
+#home1 .homeArticleText p{
+	color: white;
+  	font-size: 20px;
+
 }
-#launch1 .homeArticleText{
-	position: absolute;
-	left: 4%;
-	padding: 15px;
-	bottom: 9%;
-	text-align: center;
-	border: solid 1px white;
-	width: 30%;
-	height: 25%;
-	overflow-y: scroll;
-	background-color: rgba(0,0,0,0.3);
-}
-#launch2 .homeArticleText{
-	position: absolute;
-	left: 4%;
-	padding: 15px;
-	bottom: 9%;
-	text-align: center;
-	border: solid 1px white;
-	width: 30%;
-	height: 25%;
-	overflow-y: scroll;
-	background-color: rgba(0,0,0,0.3);
+#home1 .homeArticleText span{
+	color: white;
+  	font-size: 40px;
 }
 #about1 .homeArticleText{
 	position: absolute;
-	right: 32.5%;
-	padding: 2.5%;
-	bottom: 30%;
+	left: 12.5%;
+	padding: 15px;
+	bottom: 15%;
 	text-align: center;
-	border: solid 1px white;
-	width: 30%;
-	height: 30%;
+	width: 75%;
+	height: 55%;
 	overflow-y: scroll;
-	background-color: rgba(0,0,0,0.4);
+	background-color: transparent;
+	border: 1px solid rgba(255,255,255,0.2)
+}
+
+#about1 .homeArticleText p{
+	color: white;
+  	font-size: 20px;
+
+}
+#about1 .homeArticleText span{
+	color: white;
+  	font-size: 40px;
+}
+#about2 .homeArticleText{
+	position: absolute;
+	left: 12.5%;
+	padding: 15px;
+	bottom: 15%;
+	text-align: center;
+	width: 75%;
+	height: 55%;
+	overflow-y: scroll;
+	background-color: transparent;
+	border: 1px solid rgba(255,255,255,0.2)
+}
+
+#about2 .homeArticleText p{
+	color: white;
+  	font-size: 20px;
+
+}
+#about2 .homeArticleText span{
+	color: white;
+  	font-size: 40px;
+}
+#about2 .homeArticleText div{
+	color: black;
+	background-color: white;
+	border-radius: 15px;
+	display: inline-block;
+	height: 35%;
+	width: 40%;
+	position: relative;
+	transition: 0.5s;
+	text-align: center;
+	padding: 15px;
+}
+#about2 .homeArticleText div:hover{
+	background-color: black;
+	color: white;
+}
+#about2 .homeArticleText h2{
+	display: inline-block;
+}
+#about2 .homeArticleText h3{
+	display: inline-block;
+}
+#about3 .homeArticleText{
+	position: absolute;
+	left: 12.5%;
+	padding: 15px;
+	bottom: 15%;
+	text-align: center;
+	width: 75%;
+	height: 55%;
+	overflow-y: scroll;
+	background-color: transparent;
+	border: 1px solid rgba(255,255,255,0.2)
+}
+
+#about3 .homeArticleText p{
+	color: white;
+  	font-size: 20px;
+
+}
+#about3 .homeArticleText span{
+	color: white;
+  	font-size: 40px;
+}
+#about3 .homeArticleText div{
+	color: black;
+	background-color: white;
+	border-radius: 15px;
+	height: 35%;
+	text-align: left;
+	padding: 15px;
+	overflow-y: scroll;
+}
+#about3 .homeArticleText h2{
+	display: inline-block;
+}
+#about3 .homeArticleText h3{
+	display: inline-block;
 }
 #jobs1 .homeArticleText{
 	position: absolute;
@@ -149,11 +200,13 @@ body{
 .homeArticleText button{
 	padding: 15px;
 	color: white;
-	width: 75%;
+	width: 50%;
 	background-color: transparent;
 	font-size: 30px;
 	border: 1px solid white;
 	transition: 0.5s;
+  	color: white;
+  	border-radius: 15px;
 }
 .homeArticleText button:hover{
 	background-color: white;
