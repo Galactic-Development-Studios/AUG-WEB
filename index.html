@@ -1,51 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Aussie Games</title>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166892379-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-166892379-1');
+</script>
+	<title>AUG</title>
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<meta charset="UTF-8">
-  <meta name="description" content="Whether you looking for new friends, a place to share, or looking to explore new games, Aussie Games is your place.">
-  <meta name="keywords" content="Games, Gaming, Australia, Aussie Games, Aussie">
-  <meta name="author" content="Aussie Games">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<meta name="description" content="We are Aussie Games, a group developing a large community for many games.">
+	<meta name="theme-color" content="#FFD700">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png?v=Kmz8rqkBR6">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png?v=Kmz8rqkBR6">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png?v=Kmz8rqkBR6">
+<link rel="manifest" href="/assets/images/favicons/site.webmanifest?v=Kmz8rqkBR6">
+<link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg?v=Kmz8rqkBR6" color="#cc00ff">
+<link rel="shortcut icon" href="/assets/images/favicons/favicon.ico?v=Kmz8rqkBR6">
+<meta name="apple-mobile-web-app-title" content="AUG">
+<meta name="application-name" content="AUG">
+<meta name="msapplication-TileColor" content="#cc00ff">
+<meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml?v=Kmz8rqkBR6">
+<meta name="theme-color" content="#cc00ff">
 </head>
-<body>
-	<!--Navbar-->
-	<button id="mobileButton" onclick="toggleMobNavBar()"><img src="assets/images/icons/list.svg"></button>
-	<div id="mobileNavBar"><br><br>
-		<h3>Aussie Games</h3>
-		<button>Home</button>
-		<button>Why Us</button>
-		<button>Join</button>
-		<button>Safety</button>
+<body onload="timeOutCheck()">
+	<div id="loader" style="display: block;" ></div>
+	<div id="page" style="display: none;">
+	<!-- Navbar -->
+	<div id="nav">
+		<a href="index.html" id="navLinkActive"><div id="navItemActive">Home</div></a>
+		<a href="about.html" id="navLink"><div id="navItem">About</div></a>
+		<a href="join.html" id="navLink"><div id="navItem">Join</div></a>
+		<a href="https://usercenter.aussie-games.online" id="navLink"><div id="navItem">User Center</div></a>
 	</div>
-	<nav>
-		<button onclick="window.location.href='index.html'" class="NavbarL navActive">Home</button>
-		<button onclick="window.location.href='why.html'">Why Us</button>
-		<button onclick="window.location.href='join.html'">Join</button>
-		<button onclick="window.location.href='safety.html'" class="NavbarR">Safety</button>
-	</nav>
-	<div id="homeBoxContainer"><div id="homeBox"><p>Whether you're looking for new friends, a place to share, or exploring new games, Aussie Games is your place.
-Aussie Games provides a platform to share your ideas and play your favourite games.</p></div><button style="float: left;">Join</button><button style="float: right;">Watch Explainer</button></div><p style="position: absolute; bottom: 200px; width: 100%; text-align: center;">Scroll Down for more</p>
-	<div style="margin-top: 720px;" class="block blockBG">
-		<div class="blockPL"><br><br>
-			<h1>Safe Communities</h1><br><br>
-			<p>One of the goals of Aussie Games is to provide a safe place for people to share, chat and experience. To do this we have trained Moderators and Group Managers. These people continue to make our service a safe and enjoyable one.</p>
-		</div>
-		<img src="assets/images/symbols/1.svg" class="blockPR">
+	<!-- Main Body -->
+	<div id="homePageBodySpecial" class="homePageBody1 firstDiv">
+		<h1>Aussie Games</h1><br>
+		<p>Welcome to Aussie Games! We are a developing gaming community that features both indie and mainstream games.<br>
+With an enthusiastic, friendly and supportive member base combined with world class Community Support Officers we can help you find the<br> community for you and support you along the way.</p>
+		<button class="joinButton" onclick="window.location.href='join.html'">Join us</button><br>
 	</div>
-	<div class="block"><div class="blockPL"><br><br>
-			<h1>Games</h1><br><br>
-			<p>Games are one of the things that bring us all together. Aussie Games supports many of the top games. Ranging from simulator like Infinite Flight, to indie games like Minecraft.</p>
+	<div id="homePageBodySpecial" class="homePageBody2">
+		<h2 id="close1">What we offer</h2><br>
+		<p id="close2">We offer great, inclusive communities, and competent staff for many of the games you know.</p>
+		<button id="close3" class="joinButton" onclick="showGameList()">What do we offer</button>
+		<div id="gameList" onclick="closeGameList()">
 		</div>
-		
-		<img src="assets/images/symbols/3.svg" class="blockPR">
-		</div>
-	<div class="block blockBG"><div class="blockPL"><br><br>
-			<h1>Sharing</h1><br><br>
-			<p>Games are one of the things that bring us all together. Aussie Games supports many of the top games. Ranging from simulator like Infinite Flight, to indie games like Minecraft.</p>
-		</div>
-		<img src="assets/images/symbols/2.svg" class="blockPR"></div>
+	</div>
+	</div>
 	<script type="text/javascript" src="script.js"></script>
+	<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5ec0705a967ae56c521a7983/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 </body>
 </html>
