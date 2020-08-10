@@ -1,71 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html id="noScroll">
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166892379-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-166892379-1');
-</script>
-	<title>AUG</title>
+	<title>IKSA</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+	<link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+	<link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#000000">
+	<link rel="shortcut icon" href="/assets/images/favicons/favicon.ico">
+	<meta name="apple-mobile-web-app-title" content="IKSA">
+	<meta name="application-name" content="IKSA">
+	<meta name="msapplication-TileColor" content="#000000">
+	<meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#000000">
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<meta charset="utf-8">
-	<meta name="description" content="We are Aussie Games, a group developing a large community for many games.">
-	<meta name="theme-color" content="#FFD700">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png?v=Kmz8rqkBR6">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png?v=Kmz8rqkBR6">
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png?v=Kmz8rqkBR6">
-<link rel="manifest" href="/assets/images/favicons/site.webmanifest?v=Kmz8rqkBR6">
-<link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg?v=Kmz8rqkBR6" color="#cc00ff">
-<link rel="shortcut icon" href="/assets/images/favicons/favicon.ico?v=Kmz8rqkBR6">
-<meta name="apple-mobile-web-app-title" content="AUG">
-<meta name="application-name" content="AUG">
-<meta name="msapplication-TileColor" content="#cc00ff">
-<meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml?v=Kmz8rqkBR6">
-<meta name="theme-color" content="#cc00ff">
 </head>
-<body onload="timeOutCheck()">
-	<div id="loader" style="display: block;" ></div>
-	<div id="page" style="display: none;">
-	<!-- Navbar -->
-	<div id="nav">
-		<a href="index.html" id="navLinkActive"><div id="navItemActive">Home</div></a>
-		<a href="about.html" id="navLink"><div id="navItem">About</div></a>
-		<a href="join.html" id="navLink"><div id="navItem">Join</div></a>
-		<a href="https://usercenter.aussie-games.online" id="navLink"><div id="navItem">User Center</div></a>
+<body>
+<div id="nav">
+	<img src="assets/images/IKSA(Transparent).png">
+	<div id="navLinks">
+	<h1 class="navActive" onclick="window.location.href='index.html'">HOME</h1>
+	<h1 onclick="window.location.href='launches.html'">LAUNCHES</h1>
+	<h1 onclick="window.location.href='about.html'">ABOUT</h1>
+	<h1 onclick="window.location.href='jobs.html'">JOBS</h1>
 	</div>
-	<!-- Main Body -->
-	<div id="homePageBodySpecial" class="homePageBody1 firstDiv">
-		<h1>Aussie Games</h1><br>
-		<p>Welcome to Aussie Games! We are a developing gaming community that features both indie and mainstream games.<br>
-With an enthusiastic, friendly and supportive member base combined with world class Community Support Officers we can help you find the<br> community for you and support you along the way.</p>
-		<button class="joinButton" onclick="window.location.href='join.html'">Join us</button><br>
+</div>
+<button id="mobNavButton" onclick="openMobNav()"><img src="assets/images/icons/3lines.svg"></button>
+<div id="mobNav">
+	<button id="mobNavButton" onclick="closeMobNav()"><img src="assets/images/icons/X.svg"></button>
+	<h2>IKSA Site Navigation</h2><br>
+	<UL>
+		<li onclick="window.location.href='index.html'">Home</li>
+		<li onclick="window.location.href='launches.html'">Launches</li>
+		<li onclick="window.location.href='about.html'">About</li>
+		<li onclick="window.location.href='jobs.html'">Jobs</li>
+	</UL>
+</div>
+<div id="home1" class="homeArticle">
+	<div class="homeArticleText">
+		<h1>IKSA Looking for Staff</h1>
+		<p>IKSA has posted new job offerings for many job positions for new staff, check them out!</p><br>
+		<button onclick="window.location.href = 'jobs.html'">View</button>
 	</div>
-	<div id="homePageBodySpecial" class="homePageBody2">
-		<h2 id="close1">What we offer</h2><br>
-		<p id="close2">We offer great, inclusive communities, and competent staff for many of the games you know.</p>
-		<button id="close3" class="joinButton" onclick="showGameList()">What do we offer</button>
-		<div id="gameList" onclick="closeGameList()">
-		</div>
+</div>
+<div id="home2" class="homeArticle">
+	<div class="homeArticleText">
+		<h1>Going to new Heights</h1>
+		<p>IKSA is determined to provide great science and oppurtunities in space.</p><br>
+		<button onclick="window.location.href = 'launches.html'">Learn More</button>
 	</div>
-	</div>
-	<script type="text/javascript" src="script.js"></script>
-	<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5ec0705a967ae56c521a7983/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+</div>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

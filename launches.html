@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html id="noScroll">
+<head>
+	<title>IKSA</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+	<link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+	<link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#000000">
+	<link rel="shortcut icon" href="/assets/images/favicons/favicon.ico">
+	<meta name="apple-mobile-web-app-title" content="IKSA">
+	<meta name="application-name" content="IKSA">
+	<meta name="msapplication-TileColor" content="#000000">
+	<meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#000000">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+<div id="nav">
+	<img src="assets/images/IKSA(Transparent).png">
+	<div id="navLinks">
+	<h1 onclick="window.location.href='index.html'">HOME</h1>
+	<h1 class="navActive" onclick="window.location.href='launches.html'">LAUNCHES</h1>
+	<h1 onclick="window.location.href='about.html'">ABOUT</h1>
+	<h1 onclick="window.location.href='jobs.html'">JOBS</h1>
+	</div>
+</div>
+<button id="mobNavButton" onclick="openMobNav()"><img src="assets/images/icons/3lines.svg"></button>
+<div id="mobNav">
+	<button id="mobNavButton" onclick="closeMobNav()"><img src="assets/images/icons/X.svg"></button>
+	<h2>IKSA Site Navigation</h2><br>
+	<UL>
+		<li onclick="window.location.href='index.html'">Home</li>
+		<li onclick="window.location.href='launches.html'">Launches</li>
+		<li onclick="window.location.href='about.html'">About</li>
+		<li onclick="window.location.href='jobs.html'">Jobs</li>
+	</UL>
+</div>
+<div id="launch2" class="homeArticle">
+	<div class="homeArticleText">
+		<h1>Exploration 1 IKSA GlobeSat Launch</h1>
+		<p>IKSA's Exploration 1 Launch Vehicle, will fly its first operational flight! Launching a satelite for IKSA to map kerbin! More coming soon.</p><br>
+		<!--<button onclick="window.open('https://www.youtube.com/watch?v=jMgA2r0NGXc')">Watch</button>-->
+	</div>
+</div>
+<div id="launch1" class="homeArticle">
+	<div class="homeArticleText">
+		<h1>Exploration 1 Maiden Flight</h1>
+		<p>IKSA's Exploration 1 Launch Vehicle, flew it maiden flight! Launching a test communication satelite for IKSA! Watch the replay!</p><br>
+		<button onclick="window.open('https://youtu.be/jMgA2r0NGXc')">Watch</button>
+	</div>
+</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
