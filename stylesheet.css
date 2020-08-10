@@ -127,11 +127,14 @@ body{
   	font-size: 40px;
 }
 #about2 .homeArticleText div{
-	color: black;
-	background-color: white;
+	color: white;
 	border-radius: 15px;
 	display: inline-block;
-	height: 35%;
+	height: 25%;
+	overflow-y: scroll;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 	width: 40%;
 	position: relative;
 	transition: 0.5s;
@@ -139,7 +142,7 @@ body{
 	padding: 15px;
 }
 #about2 .homeArticleText div:hover{
-	background-color: black;
+	background-color: black !important;
 	color: white;
 }
 #about2 .homeArticleText h2{
@@ -147,11 +150,6 @@ body{
 }
 #about2 .homeArticleText h3{
 	display: inline-block;
-}
-#about2 .homeArticleText img{
-	position: relative;
-	bottom: 0px;
-	height: 50%;
 }
 #about3 .homeArticleText{
 	position: absolute;
@@ -315,11 +313,17 @@ body{
 	border: 1.5px solid rgb(0,0,0);
 	color: black;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   #mobNavButton{
     display: block;
   }
   #nav{
   	display: none;
   }
+  #home1 .homeArticleText{
+	left: 15%;
+	bottom: 15%;
+	width: 70%;
+	height: 55%;
+}
 }
