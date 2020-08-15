@@ -66,6 +66,11 @@ function checkValLogin(){
 		if (tempPWD == "TmljaG8yMjE1Mzk="){
 			saveDataPerm();
 		}
+	}else
+	if (tempUID == "SmFyZWQ="){
+		if (tempPWD == "U3BlZWRAMTQ="){
+			saveDataPerm();
+		}
 	}else{
 		console.warn("unknownUser");
 		window.alert("Your username or password is incorrect");
