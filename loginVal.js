@@ -57,6 +57,11 @@ function checkValLogin(){
 			saveDataPerm();
 		}
 	}else
+	if (tempUID == "YW5ub3lpbmc="){
+                if (temp == "RmlyZW1hbjQzMg=="){
+			saveDataPerm();
+		}
+	}else
 	if (tempUID == "R3ViYnlz"){
 		if (tempPWD == "TmljaG8yMjE1Mzk="){
 			saveDataPerm();
