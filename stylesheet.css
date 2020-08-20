@@ -1,329 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 *{
 	margin: 0px;
 	padding: 0px;
-	font-family: 'Poppins';
-}
-html{
-	overflow-x: hidden;
 }
 body{
-	background:linear-gradient(to bottom, #000A80 0%, #0062FF 50%, #00FFFF 100%);
-	overflow-x: hidden;
-	position: relative;
-		color: white;
-}
-#nav{
-	width: 90vw;
-	height: 10vh;
-	padding-left: 5vw;
-	padding-right: 5vw;
-	position: absolute;
-	z-index: 5;
-	top: 0;
-	left: 0;
-	
-}
-#navLinks{
-	height: 10vh;
-	display: inline-block;
-	line-height: 10vh;
-	margin-left: 5vw;
-}
-#nav img{
-	height: 100%;
-	float: left;
-}
-#navLinks h1{
-	display: inline-block;	
-	font-size: 3vh;
-	margin-left: 2.5vw;
-	margin-right: 2.5vw;
-	transition: all ease-in-out 1s;
-}
-#navLinks h1:hover{
-	text-decoration: underline;
-}
-.navActive{
-	text-decoration: underline;
-}
-.homeArticle{
-	z-index: 1;
 	width: 100%;
-	height: 100vh;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-color: black;
-	position: relative;
-	background: transparent;
+	height: auto;
+	min-height: 100vh;
+	background-image: linear-gradient(to bottom, #000A80 0%, #0062FF 50%, #00FFFF 100%);
+	font-family: Poppins;
+	font-weight: 400;
 }
-#home2{
-	
-}
-#home1 .homeArticleText{
-	position: absolute;
-	left: 12.5%;
-	padding: 15px;
-	bottom: 35%;
-	text-align: center;
-	width: 75%;
-	height: 35%;
-	overflow-y: scroll;
-	background-color: transparent;
-}
-
-#home1 .homeArticleText p{
-	color: white;
-  	font-size: 20px;
-
-}
-#home1 .homeArticleText span{
-	color: white;
-  	font-size: 40px;
-}
-#about1 .homeArticleText{
-	position: absolute;
-	left: 12.5%;
-	padding: 15px;
-	bottom: 15%;
-	text-align: center;
-	width: 75%;
-	height: 55%;
-	overflow-y: scroll;
-	background-color: transparent;
-	border: 1px solid rgba(255,255,255,0.2)
-}
-
-#about1 .homeArticleText p{
-	color: white;
-  	font-size: 20px;
-
-}
-#about1 .homeArticleText span{
-	color: white;
-  	font-size: 40px;
-}
-#about2 .homeArticleText{
-	position: absolute;
-	left: 12.5%;
-	padding: 15px;
-	bottom: 15%;
-	text-align: center;
-	width: 75%;
-	height: 55%;
-	overflow-y: scroll;
-	background-color: transparent;
-	border: 1px solid rgba(255,255,255,0.2)
-}
-
-#about2 .homeArticleText p{
-	color: white;
-  	font-size: 20px;
-
-}
-#about2 .homeArticleText span{
-	color: white;
-  	font-size: 40px;
-}
-#about2 .homeArticleText div{
-	color: white;
-	border-radius: 15px;
-	display: inline-block;
-	height: 25%;
-	overflow-y: scroll;
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
+nav{
 	width: 90%;
-	position: relative;
-	transition: 0.5s;
-	text-align: center;
-	padding: 5%;
-}
-#about2 .homeArticleText div:hover{
-	background-color: black !important;
-	color: white;
-}
-#about2 .homeArticleText h2{
-	display: inline-block;
-}
-#about2 .homeArticleText h3{
-	display: inline-block;
-}
-#about3 .homeArticleText{
-	position: absolute;
-	left: 12.5%;
-	padding: 15px;
-	bottom: 15%;
-	text-align: center;
-	width: 75%;
-	height: 55%;
-	overflow-y: scroll;
+	height: 65px;
 	background-color: transparent;
-	border: 1px solid rgba(255,255,255,0.2)
-}
-
-#about3 .homeArticleText p{
-	color: white;
-  	font-size: 20px;
-
-}
-#about3 .homeArticleText span{
-	color: white;
-  	font-size: 40px;
-}
-#about3 .homeArticleText div{
-	color: black;
-	background-color: white;
-	border-radius: 15px;
-	height: 35%;
-	text-align: left;
-	padding: 15px;
-	overflow-y: scroll;
-}
-#about3 .homeArticleText h2{
-	display: inline-block;
-}
-#about3 .homeArticleText h3{
-	display: inline-block;
-}
-#jobs1 .homeArticleText{
 	position: absolute;
-	left: 0;
-	padding: 2.5%;
-	top: 15%;
-	text-align: center;
-	border: solid 0.1vw white;
-	width: 94.89%;
-	height: 5%;
-	overflow-y: scroll;
-	background-color: rgba(0,0,0,0.4);
-}
-.homeArticleText button{
-	padding: 15px;
-	color: white;
-	width: 50%;
-	background-color: transparent;
-	font-size: 30px;
-	border: 1px solid white;
-	transition: 0.5s;
-  	color: white;
-  	border-radius: 15px;
-}
-.homeArticleText button:hover{
-	background-color: white;
-	color: black;
-}
-#mobNavButton{
-	background-color: white;
-	border: none;
-	width: 50px;
-	display: none;
-	height: 50px;
-	position: absolute;
-	right: 50px;
-	border-radius: 15px;
-	top: 50px;
-	z-index: 255;
-}
-#mobNavButton img{
-	height: 75%;
-	width: 75%;
-}
-#mobNav{
-	height: 90vh;
-	background-color: white;
-	position: absolute;
-	right: -101%;
-	width: 90%;
-	transition: ease-in-out 0.75s;
-	z-index: 255;
+	top: 1vh;
 	padding-left: 5vw;
 	padding-right: 5vw;
-	padding-top: 5vh;
-	padding-bottom: 5vh;
-}
-#mobNav h2{
-	color: black;
-}
-#mobNav ul{
-	list-style-type: none;
-}
-#mobNav li{
-	color: black;
-	font-size: 20px;
-	text-decoration: none;
-	border: 1px solid black;
-	width: auto;
 	text-align: center;
-	margin-top: 15px;
-	margin-bottom: 15px;
-	padding-top: 15px;
-	padding-bottom: 15px;
 }
-#jobs{
-	position: absolute;
-	top: 30%;
-	width: 100vw;
-	height: 69vh;
-	overflow-y: scroll;
-	-ms-overflow-style: none;  /* IE and Edge */
- 	 scrollbar-width: none; 
-}
-#jobs::-webkit-scrollbar {
-  display: none;
-}
-.jobsCard{
-	width: 98%;
+nav button{
+	float: right;
+	height: 50%;
 	position: relative;
-	height: 50%;
-	background-color: rgba(0,0,0,0.6);
-	border: 0.1vw solid white;
-	text-align: center;
-	display: inline-block;
-	margin-top: 25px;
-	margin-bottom: 25px;
-	padding-left: 0.5vw;
-	padding-right: 0.5vw;
-	overflow-y: scroll;
-}
-.jobsCard h1{
-	font-size: 45px;
-}
-.jobsCard p{
-	overflow-y: scroll;
-	height: 50%;
-	font-size: 20px;
-}
-.jobsCard button{
-	width: 70%;
-	height: 20%;
-	position: absolute;
-	left: 14.5%;
-	bottom: 15px;
-	border: 1px solid white;
-	color: white;
-	font-size: 150%;
-	transition: 0.5s;
+	bottom: 0px;
+	margin-left: 10px;
+	width: auto;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-right: 10px;
 	background-color: transparent;
+	border: none;
+	color: white;
+	font-size: 100%;
+	font-family: Poppins;
+	font-weight: 500;
+
 }
-.jobsCard button:hover{
-	background-color: white;
-	border: 1.5px solid rgb(0,0,0);
-	color: black;
-}
-@media only screen and (max-width: 650px) {
-  #mobNavButton{
-    display: block;
-  }
-  #nav{
-  	display: none;
-  }
-  #home1 .homeArticleText{
-	left: 15%;
-	bottom: 15%;
-	width: 70%;
-	height: 55%;
-}
+nav .text{
+	height: 100%;
+	background-color: transparent;
+	border: none;
+	margin-left: 0px;
+	width: auto;
+	margin-right: 0px;
+	color: white;
+	font-size: 25px;
+
 }
