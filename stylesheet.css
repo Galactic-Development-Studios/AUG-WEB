@@ -1,52 +1,479 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 *{
 	margin: 0px;
 	padding: 0px;
 }
 body{
-	width: 100%;
-	height: auto;
-	min-height: 100vh;
-	background-image: linear-gradient(to bottom, #000A80 0%, #0062FF 50%, #00FFFF 100%);
-	font-family: Poppins;
-	font-weight: 400;
+	background-color: rgb(10,10,10);
+	overflow-x: hidden;
+	color: white;
+	text-align: center;
+	font-family: "Varela Round", serif;
 }
-nav{
-	width: 90%;
-	height: 65px;
+#loginContainer{
+	background:linear-gradient(to bottom, #000A80 0%, #0062FF 50%, #00FFFF 100%);
+	width: 50vw;
+	height: 75vh;
+	position: absolute;
+	left: 25vw;
+	padding: 30px;
+	border-radius: 15px;
+	top: 10vh;
+	overflow-y: scroll;
+}
+#loginContainer::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */#loginContainer{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+#loginDiv{
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	left: 0px;
+
+}
+.headerImg{
+	width: 30%;
+}
+.formButton{
+	padding: 10px;
+	border-radius: 10px;
+	background-color: white;
+	color: black;
+	border:5px solid white;
+	transition: 0.1s;
+}
+.formButton:active{
+	padding: 10px;
+	border-radius: 10px;
+	background-color: blue;
+	color: white;
+	border:5px solid blue;
+}
+.formInputText{
+	padding: 10px;
+	border-radius: 10px;
+	background-color: white;
+	color: black;
+	border:2.5px solid blue;
+	transition: 0.1s;
+	outline: none;
+}
+.contentContainer{
+	background:linear-gradient(to bottom, #000A80 0%, #0062FF 50%, #00FFFF 100%);
+	width: 75vw;
+	height: 75vh;
+	position: absolute;
+	left: 12vw;
+	padding: 1vw;
+	padding-bottom: 500px;
+	border-radius: 15px;
+	top: 10vh;overflow-y: scroll;
+}
+.contentContainer::-webkit-scrollbar {
+  display: none;
+}
+.contentContainer {
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+}
+.contentDiv{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+
+}
+.List{
+	width: 75%;
 	background-color: transparent;
 	position: absolute;
-	top: 1vh;
-	padding-left: 5vw;
-	padding-right: 5vw;
-	text-align: center;
+	left: 12.5%;
+	height: 70%;
+	overflow-y: scroll;
 }
-nav button{
-	float: right;
-	height: 50%;
+.RList{
+	width: 75%;
+	background-color: transparent;
+	position: absolute;
+	left: 12.5%;
+	height: 70%;
+	overflow-y: scroll;
+}
+.List::-webkit-scrollbar {
+  display: none;
+}
+.List {
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+}
+.RList::-webkit-scrollbar {
+  display: none;
+}
+.RList {
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+}
+.gameListItem{
+	width: 22%;
+	display: inline-block;
+	border-radius: 15px;
 	position: relative;
-	bottom: 0px;
-	margin-left: 10px;
-	width: auto;
-	padding-left: 5px;
-	padding-right: 5px;
-	margin-right: 10px;
-	background-color: transparent;
-	border: none;
-	color: white;
+	padding: 10px;
+	height: 25%;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
+	margin-left: 5%;
+	margin-right: 5%;
+	background-color: rgba(0,0,0,0.5);
+	border:solid 3px rgb(40,40,40);
+	transition: 0.5s;
+	cursor: pointer;
+}
+.gameListItem:hover{
+	background-color: rgb(0,0,150);
+	border:solid 3px rgb(0,0,150);
+}
+.listImg{
+	width: 30%;
+}
+.listText{
 	font-size: 100%;
-	font-family: Poppins;
-	font-weight: 500;
+}
+.RListItem{
+	width: 35%;
+	display: inline-block;
+	border-radius: 15px;
+	position: relative;
+	padding: 10px;
+	height: 30%;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
+	margin-left: 5%;
+	margin-right: 5%;
+	background-color: rgba(0,0,0,0.5);
+	border:solid 3px rgb(40,40,40);
+	transition: 0.5s;
+	cursor: pointer;
+	min-width: 0px;
+}
+.RListItem:hover{
+	background-color: rgb(0,0,150);
+	border:solid 3px rgb(0,0,150);
+}
+.RListText{
+	font-size: 20px;
+	position: relative;
+	height: auto;
+	bottom: -40%;
+}
+.btnDisabled:hover{
+	background-color: red !important;
+	border:solid 3px red !important;
+}
+::placeholder {
+  color: rgb(50,50,50);
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: rgb(50,50,50);
+}
+
+::-ms-input-placeholder {
+  color: rgb(50,50,50);
+}
+
+  #loginContainer{
+	width: 94vw;
+	height: 94vh;
+	left: 0;
+	position: absolute;
+	padding-left: 3vw;
+	padding-right: 3vw;
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+	border-radius: 0px;
+	top: 0;
+	overflow-y: scroll;
+  }
+  .contentContainer{
+	width: 94vw;
+	height: 94vh;
+	left: 0;
+	position: absolute;
+	padding-left: 3vw;
+	padding-right: 3vw;
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+	border-radius: 0px;
+	top: 0;
+	overflow-y: hidden;
+	}
+    .RListItem:hover{
+	background-color: rgb(0,0,150);
+	border:solid 1% rgb(0,0,150);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media only screen and (max-width: 786px) {
+#loginContainer{
+	background:linear-gradient(to bottom, #000A80 0%, #0062FF 50%, #00FFFF 100%);
+	width: 50vw;
+	height: 75vh;
+	position: absolute;
+	left: 25vw;
+	padding: 30px;
+	border-radius: 15px;
+	top: 10vh;
+	overflow-y: scroll;
+}
+#loginContainer::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */#loginContainer{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+#loginDiv{
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	left: 0px;
 
 }
-nav .text{
-	height: 100%;
-	background-color: transparent;
-	border: none;
-	margin-left: 0px;
-	width: auto;
-	margin-right: 0px;
+.headerImg{
+	width: 30%;
+}
+.formButton{
+	padding: 10px;
+	border-radius: 10px;
+	background-color: white;
+	color: black;
+	border:5px solid white;
+	transition: 0.1s;
+}
+.formButton:active{
+	padding: 10px;
+	border-radius: 10px;
+	background-color: blue;
 	color: white;
-	font-size: 25px;
+	border:5px solid blue;
+}
+.formInputText{
+	padding: 10px;
+	border-radius: 10px;
+	background-color: white;
+	color: black;
+	border:2.5px solid blue;
+	transition: 0.1s;
+	outline: none;
+}
+.contentContainer{
+	background:linear-gradient(to bottom, #000A80 0%, #0062FF 50%, #00FFFF 100%);
+	width: 75vw;
+	height: 75vh;
+	position: absolute;
+	left: 12vw;
+	padding: 1vw;
+	padding-bottom: 500px;
+	border-radius: 15px;
+	top: 10vh;overflow-y: scroll;
+}
+.contentContainer::-webkit-scrollbar {
+  display: none;
+}
+.contentContainer {
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+}
+.contentDiv{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0px;
 
+}
+.List{
+	width: 75%;
+	background-color: transparent;
+	position: absolute;
+	left: 12.5%;
+	height: 70%;
+	overflow-y: scroll;
+}
+.RList{
+	width: 75%;
+	background-color: transparent;
+	position: absolute;
+	left: 12.5%;
+	height: 70%;
+	overflow-y: scroll;
+}
+.List::-webkit-scrollbar {
+  display: none;
+}
+.List {
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+}
+.RList::-webkit-scrollbar {
+  display: none;
+}
+.RList {
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+}
+.gameListItem{
+	width: 80%;
+	display: inline-block;
+	border-radius: 15px;
+	position: relative;
+	padding: 5%;
+	height: 30%;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
+	margin-left: 5%;
+	margin-right: 5%;
+	background-color: rgba(0,0,0,0.5);
+	border:solid 3px rgb(40,40,40);
+	transition: 0.5s;
+	cursor: pointer;
+}
+.gameListItem:hover{
+	background-color: rgb(0,0,150);
+	border:solid 3px rgb(0,0,150);
+}
+.listImg{
+	width: 30%;
+}
+.listText{
+	font-size: 20px;
+}
+.RListItem{
+	width: 90% !important;
+	display: inline-block;
+	border-radius: 15px;
+	position: relative;
+	padding: 10px;
+	height: 30%;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
+	margin-left: 5%;
+	margin-right: 5%;
+	background-color: rgba(0,0,0,0.5);
+	border:solid 3px rgb(40,40,40);
+	transition: 0.5s;
+	cursor: pointer;
+	min-width: 0px;
+}
+.RListItem:hover{
+	background-color: rgb(0,0,150);
+	border:solid 3px rgb(0,0,150);
+}
+.RListText{
+	font-size: 20px;
+	position: relative;
+	height: auto;
+	bottom: -40%;
+}
+.btnDisabled:hover{
+	background-color: red !important;
+	border:solid 3px red !important;
+}
+::placeholder {
+  color: rgb(50,50,50);
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: rgb(50,50,50);
+}
+
+::-ms-input-placeholder {
+  color: rgb(50,50,50);
+}
+
+  .RListItem{
+    width: 98%;
+    border:solid 1% transparent;
+    margin: 0px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  #loginContainer{
+	width: 94vw;
+	height: 94vh;
+	left: 0;
+	position: absolute;
+	padding-left: 3vw;
+	padding-right: 3vw;
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+	border-radius: 0px;
+	top: 0;
+	overflow-y: scroll;
+  }
+  .contentContainer{
+	width: 94vw;
+	height: 94vh;
+	left: 0;
+	position: absolute;
+	padding-left: 3vw;
+	padding-right: 3vw;
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+	border-radius: 0px;
+	top: 0;
+	overflow-y: hidden;
+	}
+    .RListItem:hover{
+	background-color: rgb(0,0,150);
+	border:solid 1% rgb(0,0,150);
+  }
 }

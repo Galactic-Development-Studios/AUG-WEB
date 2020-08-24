@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>AUG UC: Login</title>
+	<title>AUG UC: MC Resources</title>
 	<meta name="theme-color" content="#FFD700">
 		<link rel="apple-touch-icon" sizes="180x180" href="https://aussie-games.online/assets/images/favicons/apple-touch-icon.png?v=Kmz8rqkBR6">
 <link rel="icon" type="image/png" sizes="32x32" href="https://aussie-games.online/assets/images/favicons/favicon-32x32.png?v=Kmz8rqkBR6">
@@ -14,21 +14,19 @@
 <meta name="msapplication-TileColor" content="#cc00ff">
 <meta name="msapplication-config" content="https://aussie-games.online/assets/images/favicons/browserconfig.xml?v=Kmz8rqkBR6">
 <meta name="theme-color" content="#cc00ff">
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="../stylesheet.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<div id="loginContainer">
-		<div id="loginDiv">
-		<form onsubmit="return false" >
-			<img class="headerImg" src="assets/generalResources/logoBig.png"><br><br><br>
-			<h1>User Center Login</h1>
-			<p>Here you can log into the user center where you can acess all the resources for you favourite games.</p><br><br>
-			<label>Username: <input type="text" name="UID" class="formInputText" id="formUID" placeholder="Username"></label><br><br>
-			<label>Password: <input type="password" name="PWD" class="formInputText" id="formPWD" placeholder="Password"></label><br><br>
-			<button type="submit" class="formButton" onclick="checkInputVal()">Submit</button>
-		</form>
+	<div class="contentContainer">
+		<div class="contentDiv">
+			<h1>Minecraft</h1><br><h4 style="text-decoration: underline; cursor:pointer;" onclick="window.location.href='../main.html'">(Go Back)</h4><br><br>
+			<div class="RList">
+				<div class="RListItem" onclick="window.alert('The server can be located at tmog.online')">
+					<h4 class="RListText">AUG/TMOG Server</h4>
+				</div>
+			</div>
 		</div>
 	</div>
-	<script type="text/javascript" src="loginVal.js" onload="checkPrevLogin()"></script>
 </body>
 </html>
