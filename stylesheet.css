@@ -1,479 +1,126 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 *{
 	margin: 0px;
 	padding: 0px;
+}
+button{
+	cursor: pointer;
 }
 body{
 	background-color: rgb(10,10,10);
 	overflow-x: hidden;
 	color: white;
+	height: auto;
+	min-height: 100vh;
 	text-align: center;
-	font-family: "Varela Round", serif;
+	font-family: "Poppins", serif;
+	 -ms-overflow-style: none;
+  	scrollbar-width: none;
 }
-#loginContainer{
-	background:linear-gradient(to bottom, #000A80 0%, #0062FF 50%, #00FFFF 100%);
-	width: 50vw;
-	height: 75vh;
-	position: absolute;
-	left: 25vw;
-	padding: 30px;
-	border-radius: 15px;
-	top: 10vh;
-	overflow-y: scroll;
-}
-#loginContainer::-webkit-scrollbar {
+body::-webkit-scrollbar {
   display: none;
 }
+nav{
+	padding-left: 10vw;
+	padding-right: 10vw;
+	width: 80vw;
+	background-color: rgba(0,0,0,0.3);
+	text-align: center;
+	height: 9vh;
+	z-index: 255;
+	position: fixed;
+	min-height: 44px;
 
-/* Hide scrollbar for IE, Edge and Firefox */#loginContainer{
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
 }
-#loginDiv{
-	position: absolute;
-	width: 100%;
-	height: 50%;
-	left: 0px;
-
-}
-.headerImg{
-	width: 30%;
-}
-.formButton{
-	padding: 10px;
-	border-radius: 10px;
-	background-color: white;
-	color: black;
-	border:5px solid white;
-	transition: 0.1s;
-}
-.formButton:active{
-	padding: 10px;
-	border-radius: 10px;
-	background-color: blue;
-	color: white;
-	border:5px solid blue;
-}
-.formInputText{
-	padding: 10px;
-	border-radius: 10px;
-	background-color: white;
-	color: black;
-	border:2.5px solid blue;
-	transition: 0.1s;
-	outline: none;
-}
-.contentContainer{
-	background:linear-gradient(to bottom, #000A80 0%, #0062FF 50%, #00FFFF 100%);
-	width: 75vw;
-	height: 75vh;
-	position: absolute;
-	left: 12vw;
-	padding: 1vw;
-	padding-bottom: 500px;
-	border-radius: 15px;
-	top: 10vh;overflow-y: scroll;
-}
-.contentContainer::-webkit-scrollbar {
-  display: none;
-}
-.contentContainer {
-  -ms-overflow-style: none;
-  scrollbar-width: none; 
-}
-.contentDiv{
-	position: absolute;
-	width: 100%;
+nav img{
 	height: 100%;
-	left: 0px;
-
+	float: left;
 }
-.List{
-	width: 75%;
+nav button{
+	margin-left: 2.5px;
+	margin-right: 2.5px;
+	width: auto;
+	padding-left: 2.5%;padding-right: 2.5%;
+	border: none;
+	height: 50%;
 	background-color: transparent;
-	position: absolute;
-	left: 12.5%;
-	height: 70%;
-	overflow-y: scroll;
-}
-.RList{
-	width: 75%;
-	background-color: transparent;
-	position: absolute;
-	left: 12.5%;
-	height: 70%;
-	overflow-y: scroll;
-}
-.List::-webkit-scrollbar {
-  display: none;
-}
-.List {
-  -ms-overflow-style: none;
-  scrollbar-width: none; 
-}
-.RList::-webkit-scrollbar {
-  display: none;
-}
-.RList {
-  -ms-overflow-style: none;
-  scrollbar-width: none; 
-}
-.gameListItem{
-	width: 22%;
-	display: inline-block;
-	border-radius: 15px;
-	position: relative;
-	padding: 10px;
-	height: 25%;
-	margin-top: 2.5%;
-	margin-bottom: 2.5%;
-	margin-left: 5%;
-	margin-right: 5%;
-	background-color: rgba(0,0,0,0.5);
-	border:solid 3px rgb(40,40,40);
-	transition: 0.5s;
 	cursor: pointer;
+	color: white;	
+	font-family: "Poppins";
+	position: relative;
+	top: 25%;
+	font-size: 15px;
+	transition: 0.25s;
+	border-bottom: solid transparent 3px;
 }
-.gameListItem:hover{
-	background-color: rgb(0,0,150);
-	border:solid 3px rgb(0,0,150);
+nav .active{
+	border-bottom: solid white 3px;
 }
-.listImg{
+nav button:hover{
+	border-bottom: solid white 3px;
+}
+.fullBodySegment{
+	position: relative;
+	width: 100vw;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	height: 100vh;
+}
+.fullBodySegment video{
+	z-index: -1;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+.fullBodySegment .leftSide{
+	position: absolute;
+	background-color: rgba(0,0,0,0.2);
+	bottom: 10%;
 	width: 30%;
+	left: 5%;
+	text-align: left;
+	padding:15px;
 }
-.listText{
+.fullBodySegment .rightSide{
+	position: absolute;
+	background-color: rgba(0,0,0,0.2);
+	bottom: 10%;
+	width: 30%;
+	right: 5%;
+	text-align: right;
+	padding:15px;
+}
+.fullBodySegment div button{
+	background-color: transparent;
+	border:5px solid white;
+	padding: 5px;
+	color: white;
+	font-family: "Poppins";
+	width: 50%;
+	height: 50px;
 	font-size: 100%;
-}
-.RListItem{
-	width: 35%;
-	display: inline-block;
-	border-radius: 15px;
-	position: relative;
-	padding: 10px;
-	height: 30%;
-	margin-top: 2.5%;
-	margin-bottom: 2.5%;
-	margin-left: 5%;
-	margin-right: 5%;
-	background-color: rgba(0,0,0,0.5);
-	border:solid 3px rgb(40,40,40);
 	transition: 0.5s;
-	cursor: pointer;
-	min-width: 0px;
-}
-.RListItem:hover{
-	background-color: rgb(0,0,150);
-	border:solid 3px rgb(0,0,150);
-}
-.RListText{
-	font-size: 20px;
-	position: relative;
-	height: auto;
-	bottom: -40%;
-}
-.btnDisabled:hover{
-	background-color: red !important;
-	border:solid 3px red !important;
-}
-::placeholder {
-  color: rgb(50,50,50);
-  opacity: 1;
-}
-
-:-ms-input-placeholder {
-  color: rgb(50,50,50);
-}
-
-::-ms-input-placeholder {
-  color: rgb(50,50,50);
-}
-
-  #loginContainer{
-	width: 94vw;
-	height: 94vh;
-	left: 0;
-	position: absolute;
-	padding-left: 3vw;
-	padding-right: 3vw;
-	padding-top: 3vh;
-	padding-bottom: 3vh;
-	border-radius: 0px;
-	top: 0;
-	overflow-y: scroll;
-  }
-  .contentContainer{
-	width: 94vw;
-	height: 94vh;
-	left: 0;
-	position: absolute;
-	padding-left: 3vw;
-	padding-right: 3vw;
-	padding-top: 3vh;
-	padding-bottom: 3vh;
-	border-radius: 0px;
-	top: 0;
-	overflow-y: hidden;
-	}
-    .RListItem:hover{
-	background-color: rgb(0,0,150);
-	border:solid 1% rgb(0,0,150);
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- @media only screen and (max-width: 786px) {
-#loginContainer{
-	background:linear-gradient(to bottom, #000A80 0%, #0062FF 50%, #00FFFF 100%);
-	width: 50vw;
-	height: 75vh;
-	position: absolute;
-	left: 25vw;
-	padding: 30px;
-	border-radius: 15px;
-	top: 10vh;
-	overflow-y: scroll;
-}
-#loginContainer::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */#loginContainer{
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-#loginDiv{
-	position: absolute;
-	width: 100%;
-	height: 50%;
-	left: 0px;
-
-}
-.headerImg{
-	width: 30%;
-}
-.formButton{
-	padding: 10px;
-	border-radius: 10px;
-	background-color: white;
+}.fullBodySegment div button:hover{
 	color: black;
-	border:5px solid white;
-	transition: 0.1s;
-}
-.formButton:active{
-	padding: 10px;
-	border-radius: 10px;
-	background-color: blue;
-	color: white;
-	border:5px solid blue;
-}
-.formInputText{
-	padding: 10px;
-	border-radius: 10px;
 	background-color: white;
+}
+#loginBTN{
+	border-radius: 15px;
+	border:2.5px solid white;
+}
+#loginBTN:hover{
 	color: black;
-	border:2.5px solid blue;
-	transition: 0.1s;
-	outline: none;
+	background-color: white;
 }
-.contentContainer{
-	background:linear-gradient(to bottom, #000A80 0%, #0062FF 50%, #00FFFF 100%);
-	width: 75vw;
-	height: 75vh;
-	position: absolute;
-	left: 12vw;
-	padding: 1vw;
-	padding-bottom: 500px;
-	border-radius: 15px;
-	top: 10vh;overflow-y: scroll;
+footer{
+	height: 50vh;
+	background-color: black;
 }
-.contentContainer::-webkit-scrollbar {
-  display: none;
-}
-.contentContainer {
-  -ms-overflow-style: none;
-  scrollbar-width: none; 
-}
-.contentDiv{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	left: 0px;
-
-}
-.List{
-	width: 75%;
-	background-color: transparent;
-	position: absolute;
-	left: 12.5%;
-	height: 70%;
-	overflow-y: scroll;
-}
-.RList{
-	width: 75%;
-	background-color: transparent;
-	position: absolute;
-	left: 12.5%;
-	height: 70%;
-	overflow-y: scroll;
-}
-.List::-webkit-scrollbar {
-  display: none;
-}
-.List {
-  -ms-overflow-style: none;
-  scrollbar-width: none; 
-}
-.RList::-webkit-scrollbar {
-  display: none;
-}
-.RList {
-  -ms-overflow-style: none;
-  scrollbar-width: none; 
-}
-.gameListItem{
-	width: 80%;
-	display: inline-block;
-	border-radius: 15px;
-	position: relative;
-	padding: 5%;
-	height: 30%;
-	margin-top: 2.5%;
-	margin-bottom: 2.5%;
-	margin-left: 5%;
-	margin-right: 5%;
-	background-color: rgba(0,0,0,0.5);
-	border:solid 3px rgb(40,40,40);
-	transition: 0.5s;
-	cursor: pointer;
-}
-.gameListItem:hover{
-	background-color: rgb(0,0,150);
-	border:solid 3px rgb(0,0,150);
-}
-.listImg{
-	width: 30%;
-}
-.listText{
-	font-size: 20px;
-}
-.RListItem{
-	width: 90% !important;
-	display: inline-block;
-	border-radius: 15px;
-	position: relative;
-	padding: 10px;
-	height: 30%;
-	margin-top: 2.5%;
-	margin-bottom: 2.5%;
-	margin-left: 5%;
-	margin-right: 5%;
-	background-color: rgba(0,0,0,0.5);
-	border:solid 3px rgb(40,40,40);
-	transition: 0.5s;
-	cursor: pointer;
-	min-width: 0px;
-}
-.RListItem:hover{
-	background-color: rgb(0,0,150);
-	border:solid 3px rgb(0,0,150);
-}
-.RListText{
-	font-size: 20px;
-	position: relative;
-	height: auto;
-	bottom: -40%;
-}
-.btnDisabled:hover{
-	background-color: red !important;
-	border:solid 3px red !important;
-}
-::placeholder {
-  color: rgb(50,50,50);
-  opacity: 1;
-}
-
-:-ms-input-placeholder {
-  color: rgb(50,50,50);
-}
-
-::-ms-input-placeholder {
-  color: rgb(50,50,50);
-}
-
-  .RListItem{
-    width: 98%;
-    border:solid 1% transparent;
-    margin: 0px;
-    margin-top: 1%;
-    margin-bottom: 1%;
-  }
-  #loginContainer{
-	width: 94vw;
-	height: 94vh;
-	left: 0;
-	position: absolute;
-	padding-left: 3vw;
-	padding-right: 3vw;
-	padding-top: 3vh;
-	padding-bottom: 3vh;
-	border-radius: 0px;
-	top: 0;
-	overflow-y: scroll;
-  }
-  .contentContainer{
-	width: 94vw;
-	height: 94vh;
-	left: 0;
-	position: absolute;
-	padding-left: 3vw;
-	padding-right: 3vw;
-	padding-top: 3vh;
-	padding-bottom: 3vh;
-	border-radius: 0px;
-	top: 0;
-	overflow-y: hidden;
-	}
-    .RListItem:hover{
-	background-color: rgb(0,0,150);
-	border:solid 1% rgb(0,0,150);
+@media only screen and (max-width: 700px) {
+  .fullBodySegment div{
+  	width: calc(90% - 30px) !important;
+  	text-align: center !important;
   }
 }

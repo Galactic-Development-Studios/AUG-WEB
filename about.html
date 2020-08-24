@@ -1,69 +1,66 @@
 <!DOCTYPE html>
-<html id="noScroll">
+<html>
 <head>
-	<title>AUG</title>
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<title>Aussie Games</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png?v=3">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png?v=3">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png?v=3">
+<link rel="manifest" href="/assets/favicon/site.webmanifest?v=3">
+<link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg?v=3" color="#5bbad5">
+<link rel="shortcut icon" href="/assets/favicon/favicon.ico?v=3">
+<meta name="msapplication-TileColor" content="#00b2ff">
+<meta name="msapplication-config" content="/assets/favicon/browserconfig.xml?v=3">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta charset="UTF-8">
+  <meta name="description" content="A community of Australian Gamers, making a new way to play.">
+  <meta name="keywords" content="AUG, Aussie Games, Gaming">
+  <meta name="author" content="AUG Web Team">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
-<div id="nav">
-	<img src="assets/images/logo.png">
-	<div id="navLinks">
-	<h1 onclick="window.location.href='index.html'">HOME</h1>
-	<h1 class="navActive" onclick="window.location.href='about.html'">ABOUT</h1>
-	<h1 onclick="window.location.href='join.html'">JOIN</h1>
-	<h1 onclick="window.location.href='https://usercenter.aussie-games.online'">USER CENTER</h1>
+	<nav id="navBar">
+		<img src="assets/images/logo.png">
+		<button onclick="window.location.href='index.html'">
+			Home
+		</button>
+		<button class="active" onclick="window.location.href='about.html'">
+			About
+		</button>
+		<button onclick="window.location.href='join.html'">
+			Join
+		</button>
+		<button onclick="window.location.href='safety.html'">
+			Safety
+		</button>
+		<button style="float: right;" id="loginBTN" onclick="window.location.href='https://usercenter.aussie-games.online'">
+			Login
+		</button>
+	</nav>
+	<div class="fullBodySegment" style="height: 90vh;">
+		<video muted loop autoplay><source src="assets/videos/homeVid1.mp4" type="video/mp4"></video>
+	<div class="leftSide">
+		<h3>A New Generation</h3>
+		<h2>Aussie Games Provides a new way to play</h2>
+		<p>Aussie Games is providing a new way to play with others, in a gaming community.</p>
+		<br>
+		<button>Join</button>
 	</div>
-</div>
-<button id="mobNavButton" onclick="openMobNav()"><img src="assets/images/icons/3lines.svg"></button>
-<div id="mobNav">
-	<button id="mobNavButton" onclick="closeMobNav()"><img src="assets/images/icons/X.svg"></button>
-	<h2>AUG Site Navigation</h2><br>
-	<UL>
-		<li onclick="window.location.href='index.html'">Home</li>
-		<li onclick="window.location.href='about.html'">About</li>
-		<li onclick="window.location.href='join.html'">Join</li>
-		<li onclick="window.location.href='https://usercenter.aussie-games.online'">User Center</li>
-	</UL>
-</div>
-<div id="about1" class="homeArticle" style="height: 80vh;">
-	<div class="homeArticleText">
-		<p>
-		<span>A Messsage from the Owner</span><br>
-		<p style="font-size: 20px;">Hello and welcome, to the website of '<i>Aussie Games</i>' (AUG). The server in its current form which you see all began originally as a discord server called '<i>Aussie Flashing Lights Roleplay</i>' (AFLRP) for the game '<i>Flashing Lights</i>' (FL). AFLRP was formed from  a merger between two FL servers; 'Flashing Lights RP' and 'Aussie Games' owned by SamSam and OfficerGalaxy respectively. With the common goal of having an enthusiastic member base that shares a common passion of role-playing as emergency service personal.<br><br>
-
-After many successful months of running AFLRP and adopting new technologies such as <i>Computer Aided Dispatch (CAD) and Mobile Data Terminal (MDT)</i> systems courtesy of DCRS Online in an effort to make our Role Play more realistic, and transitioning our server to be more website based thanks to the tireless efforts of our <i>Community Support Officers</i> (CSO's) and<i> Website Developers;</i> Teddy9264 and OfficerGalaxy. <br><br>
-
-After this the CSO's and I decided the next logical step was to expand the server to include multiple games. After surveying the members to find what games would be included all we had to do was find which program to use. One day OfficerGalaxy stumbled across a program called <i>Guilded</i> which is quite similar to discord, while having more sophisticated channel types; allowing our server to be more organised and easy to use.<br><br>
-
-I would like to finish by thanking the members of the server, especialy those who have been gracious enough to join our <i>Dispatching, Moderation</i> and Guilded Transition teams. I would personally like to thank the <i>Community Support Officer</i> team, Officer Galaxy and Teddy9264; as without them this amazing website which you see as well as many other things would have never come into fruition. Their tireless efforts are much appreciated and never forgotten. <br><br>
-
-Please feel free to join our community by heading over to <i>"Join"</i> on the navigation bar.</p><br>
-<h3>Thanks,<br><br>SamSam, Owner and C.E.O of AUG</h3></p><br>
-</div>
-</div>
-<div id="about2" class="homeArticle" style="height: 90vh;">
-	<div class="homeArticleText">
-		<span>Suported Games</span><br>
-		<div onclick="window.open('https://store.steampowered.com/app/605740/Flashing_Lights__Police_Firefighting_Emergency_Services_Simulator/')" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/images/gameIcons/FL.webp');"><h2>Flashing Lights</h2></div><br><br>
-		<div onclick="window.open('https://gmod.facepunch.com')" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/images/gameIcons/GM.webp');"><h2>Garry's Mod</h2></div><br><br>
-		<div onclick="window.open('https://infiniteflight.com')" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/images/gameIcons/IF.webp');"><h2>Infinite Flight</h2></div><br><br>
-		<div onclick="window.open('https://iksa.aussie-games.online')" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/images/gameIcons/IKSA.png');"><h2>IKSA, International Kerbal Space Agency</h2></div><br><br>
-		<div onclick="window.open('https://www.minecraft.net/en-us/')" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/images/gameIcons/MC.webp');"><h2>Minecraft</h2></div><br><br>
-		<div onclick="window.open('https://www.roblox.com')" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/images/gameIcons/RB.webp');"><h2>Roblox</h2></div><br><br>
-		<div onclick="window.open('https://www.paradoxplaza.com/surviving-mars/SUSM01GSK-MASTER.html')" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/images/gameIcons/SM.webp');"><h2>Surviving Mars</h2></div><br><br>
-		<div onclick="window.open('https://www.reentrygame.com')" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/images/gameIcons/RE.webp');"><h2>Reentry</h2></div><br><br>
-</div>
-</div>
-<div id="about3" class="homeArticle" style="height: 80vh;">
-	<div class="homeArticleText">
-	<span>Staff of AUG</span><br>
-		<div><h2 style="color: gold;">Owner:</h2><br><h3>SamSam</h3><br><br><h2 style="color: green;">Manages:</h2><br><h3>Main Group, FL</h3></div><br><br>
-		<div><h2 style="color: blue;">CSO:</h2><br><h3>Teddy9264</h3><br><br><h2 style="color: green;">Manages:</h2><br><h3>Minecraft</h3></div><br><br>
-		<div><h2 style="color: blue;">Developer:</h2><br><h3>Galaxy</h3><br><br><h2 style="color: green;">Manages:</h2><br><h3>IKSA, SM, IF</h3></div><br><br>
-		<div><h2 style="color: blue;">CSO:</h2><br><h3>Davo</h3><br><br><h2 style="color: green;">Manages:</h2><br><h3>Roblox</h3></div><br><br>
-		<div><h2 style="color: green;">GM:</h2><br><h3>Gubby</h3><br><br><h2 style="color: green;">Manages:</h2><br><h3>Garry's Mod</h3></div><br><br>
-</div>
-</div>
-<script type="text/javascript" src="script.js"></script>
+	</div>
+	<div class="fullBodySegment">
+		<video muted loop autoplay><source src="assets/videos/homeVid2.mp4" type="video/mp4"></video>
+			<div class="rightSide">
+		<h3>Various Games</h3>
+		<h2>Aussie Games supports many games</h2>
+		<p>AUG Provides communities for various games, from indie to simulation.</p>
+		<br>
+		<button>View All</button>
+	</div>
+	</div>
+	<footer>
+		<p> &#169 Aussie Games, 2020 </p>
+	</footer>
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
