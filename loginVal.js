@@ -40,47 +40,74 @@ function checkValLogin(){
 	if (tempUID == "U2FtU2Ft"){
 		if (tempPWD == "U2FtU2Ft"){
 			saveDataPerm();
-		}
+		}else{
+		console.warn("unknownUser");
+		window.alert("Your username or password is incorrect");
+	}
 	}else
 	if (tempUID == "R2FsYXh5"){
 		if (tempPWD == "R2FsYXh5NTEyMUFVRw=="){
 			saveDataPerm();
-		}
+		}else{
+		console.warn("unknownUser");
+		window.alert("Your username or password is incorrect");
+	}
 	}else
 	if (tempUID == "VGVkZHk5MjY0"){
 		if (tempPWD == "Tm8gY29tbWVudA=="){
 			saveDataPerm();
-		}
+		}else{
+		console.warn("unknownUser");
+		window.alert("Your username or password is incorrect");
+	}
 	}else
 	if (tempUID == "ZGF2bzIyMTI="){
 		if (tempPWD == "TWF4aWUyMDE0"){
 			saveDataPerm();
-		}
+		}else{
+		console.warn("unknownUser");
+		window.alert("Your username or password is incorrect");
+	}
 	}else
 	if (tempUID == "YW5ub3lpbmc="){
                 if (temp == "RmlyZW1hbjQzMg=="){
 			saveDataPerm();
-		}
+		}else{
+		console.warn("unknownUser");
+		window.alert("Your username or password is incorrect");
+	}
 	}else
 	if (tempUID == "R3ViYnlz"){
 		if (tempPWD == "TmljaG8yMjE1Mzk="){
 			saveDataPerm();
-		}
+		}else{
+		console.warn("unknownUser");
+		window.alert("Your username or password is incorrect");
+	}
 	}else
 	if (tempUID == "SmFyZWQ="){
 		if (tempPWD == "U3BlZWRAMTQ="){
 			saveDataPerm();
-		}
+		}else{
+		console.warn("unknownUser");
+		window.alert("Your username or password is incorrect");
+	}
 	}else
 	if (tempUID == "TWFpbGJveTA2"){
 		if (tempPWD == "RmlyZWZpZ2h0ZXIxNjcz"){
 			saveDataPerm();
-		}
+		}else{
+		console.warn("unknownUser");
+		window.alert("Your username or password is incorrect");
+	}
 	}else
 	if (tempUID == "VU5JVDEz"){
 		if (tempPWD == "VU5JVDEzMjAwNQ=="){
 			saveDataPerm();
-		}
+		}else{
+		console.warn("unknownUser");
+		window.alert("Your username or password is incorrect");
+	}
 	}else{
 		console.warn("unknownUser");
 		window.alert("Your username or password is incorrect");
