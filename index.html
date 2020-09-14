@@ -37,7 +37,24 @@
 		<button style="float: right;" id="loginBTN" onclick="window.location.href='https://usercenter.aussie-games.online'">
 			Login
 		</button>
+		<button id="mobileNavButton" onclick="toggleMobileNavBar()">
+			<img id="mobileNavButtonImg" src="assets/images/icons/3lines.svg">
+		</button>
 	</nav>
+	<div id="mobileNavBar">
+		<div onclick="window.location.href='index.html'">
+			<h1>Home</h1>
+		</div>
+		<div onclick="window.location.href='about.html'">
+			<h1>About</h1>
+		</div>
+		<div onclick="window.location.href='join.html'">
+			<h1>Join</h1>
+		</div>
+		<div onclick="window.location.href='safety.html'">
+			<h1>Safety</h1>
+		</div>
+	</div>
 	<div class="fullBodySegment" style="height: calc(81vh - 44px); padding-top: calc(9vh + 44px);">
 		<video muted loop autoplay playsinline>
 			<source src="assets/videos/mp4/homeVid1.mp4" type="video/mp4">

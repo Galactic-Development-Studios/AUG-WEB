@@ -1,38 +1,89 @@
 <!DOCTYPE html>
-<html id="noScroll">
+<html>
 <head>
-	<title>AUG</title>
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<title>Aussie Games</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png?v=3">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png?v=3">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png?v=3">
+<link rel="manifest" href="/assets/favicon/site.webmanifest?v=3">
+<link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg?v=3" color="#5bbad5">
+<link rel="shortcut icon" href="/assets/favicon/favicon.ico?v=3">
+<meta name="msapplication-TileColor" content="#00b2ff">
+<meta name="msapplication-config" content="/assets/favicon/browserconfig.xml?v=3">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta charset="UTF-8">
+  <meta name="description" content="A community of Australian Gamers, making a new way to play.">
+  <meta name="keywords" content="AUG, Aussie Games, Gaming">
+  <meta name="author" content="AUG Web Team">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
-<div id="nav">
-	<img src="assets/images/logo.png">
-	<div id="navLinks">
-	<h1 onclick="window.location.href='index.html'">HOME</h1>
-	<h1 onclick="window.location.href='about.html'">ABOUT</h1>
-	<h1 class="navActive" onclick="window.location.href='join.html'">JOIN</h1>
-	<h1 onclick="window.location.href='https://usercenter.aussie-games.online'">USER CENTER</h1>
+	<nav id="navBar">
+		<img src="assets/images/logo.png" onclick="window.location.href='index.html'">
+		<button class="active" onclick="window.location.href='index.html'">
+			Home
+		</button>
+		<button onclick="window.location.href='about.html'">
+			About
+		</button>
+		<button onclick="window.location.href='join.html'">
+			Join
+		</button>
+		<button onclick="window.location.href='safety.html'">
+			Safety
+		</button>
+		<button style="float: right;" id="loginBTN" onclick="window.location.href='https://usercenter.aussie-games.online'">
+			Login
+		</button>
+		<button id="mobileNavButton" onclick="toggleMobileNavBar()">
+			<img id="mobileNavButtonImg" src="assets/images/icons/3lines.svg">
+		</button>
+	</nav>
+	<div id="mobileNavBar">
+		<div onclick="window.location.href='index.html'">
+			<h1>Home</h1>
+		</div>
+		<div onclick="window.location.href='about.html'">
+			<h1>About</h1>
+		</div>
+		<div onclick="window.location.href='join.html'">
+			<h1>Join</h1>
+		</div>
+		<div onclick="window.location.href='safety.html'">
+			<h1>Safety</h1>
+		</div>
 	</div>
-</div>
-<button id="mobNavButton" onclick="openMobNav()"><img src="assets/images/icons/3lines.svg"></button>
-<div id="mobNav">
-	<button id="mobNavButton" onclick="closeMobNav()"><img src="assets/images/icons/X.svg"></button>
-	<h2>AUG Site Navigation</h2><br>
-	<UL>
-		<li onclick="window.location.href='index.html'">Home</li>
-		<li onclick="window.location.href='about.html'">About</li>
-		<li onclick="window.location.href='join.html'">Join</li>
-		<li onclick="window.location.href='https://usercenter.aussie-games.online'">User Center</li>
-	</UL>
-</div>
-<div id="home1" class="homeArticle">
-	<div class="homeArticleText">
-		<p>
-		<span>Join AUG</span><br>
-		Great! We cant wait to have you as part of the team! We use Guilded, a chat system that is more optomised for our use case. Click the "join" button below to join.</p><br>
-		<button onclick="window.location.href = 'https://www.guilded.gg/r/zz1EDa9Omj'">Join</button>
+	<div class="fullBodySegment" style="height: calc(81vh - 44px); padding-top: calc(9vh + 44px);">
+		<video muted loop autoplay playsinline>
+			<source src="assets/videos/mp4/homeVid1.mp4" type="video/mp4">
+			<source src="assets/videos/webm/homeVid1.webm" type="video/webm">
+		</video>
+	<div class="leftSide">
+		<h3>A New Generation</h3>
+		<h2>Aussie Games Provides a new way to play</h2>
+		<p>Aussie Games is providing a new way to play with others, in a gaming community.</p>
+		<br>
+		<button>Join</button>
 	</div>
-</div>
-<script type="text/javascript" src="script.js"></script>
+	</div>
+	<div class="fullBodySegment">
+		<video muted loop autoplay playsinline>
+			<source src="assets/videos/mp4/homeVid2.mp4" type="video/mp4">
+			<source src="/assets/videos/webm/homeVid2.webm" type="video/webm">
+		</video>
+			<div class="rightSide">
+		<h3>Various Games</h3>
+		<h2>Aussie Games supports many games</h2>
+		<p>AUG Provides communities for various games, from indie to simulation.</p>
+		<br>
+		<button>View All</button>
+	</div>
+	</div>
+	<footer>
+		<p> &#169 Aussie Games, 2020 </p>
+	</footer>
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
