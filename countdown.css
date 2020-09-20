@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap');
+
+*{
+	margin: 0px;
+	padding: 0px;
+	color: white;
+	font-family: 'Amaranth';
+}
+html{
+	overflow-x: hidden;
+}
+body{
+	background-color: black;
+	overflow-x: hidden;
+	position: relative;
+}
+#returnToWeb{
+	height: 5vh;
+	font-size: 100%;
+	color: black;
+	text-align: center;
+	width: 100vw;
+}
+#countdownContainer{
+	background-color: transparent;
+	text-align: center;
+	width: 50vw;
+	height: 75vh;
+	position: relative;
+	z-index: 255;
+	top: 12.5vh;
+	left: 25vw;
+}
+#countdownContainer h1{
+	border-bottom: 5px solid white;
+	margin-bottom: 50px;
+}
