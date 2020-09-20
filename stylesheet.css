@@ -189,6 +189,7 @@ body{
 	height: 90vh;
 	background-color: white;
 	position: absolute;
+	overflow-y: scroll;
 	right: -101%;
 	width: 90%;
 	transition: ease-in-out 0.75s;
@@ -219,11 +220,26 @@ body{
 #jobs{
 	position: absolute;
 	top: 30%;
+	margin-top: 65px;
 	width: 100vw;
 	height: 69vh;
 	overflow-y: scroll;
 	-ms-overflow-style: none;  /* IE and Edge */
  	 scrollbar-width: none; 
+}
+#jobHeader{
+	width: 98%;
+	position: relative;
+	height: 15%;
+	background-color: rgba(0,0,0,0.6);
+	border: 0.1vw solid white;
+	text-align: center;
+	display: inline-block;
+	margin-top: 120px;
+	margin-bottom: 250px;
+	padding-left: 0.5vw;
+	padding-right: 0.5vw;
+	overflow-y: scroll;
 }
 #jobs::-webkit-scrollbar {
   display: none;
@@ -231,7 +247,7 @@ body{
 .jobsCard{
 	width: 98%;
 	position: relative;
-	height: 50%;
+	height: 75%;
 	background-color: rgba(0,0,0,0.6);
 	border: 0.1vw solid white;
 	text-align: center;
