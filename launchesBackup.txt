@@ -40,10 +40,12 @@
 </div>
 <div id="launch1" class="homeArticle">
 	<div class="homeArticleText">
-		<h1>Update</h1>
-		<p>IKSA Launches for the future are currently on hold due to a major issue with the telemtry software.</p><br><button onclick="window.open('https://twitter.com/AUGIKSA/status/1307541471910748161');">View Full Statement</button>
+		<h1>Exploration 1 Return To Flight, GlobeSat2</h1><br>
+		<p>IKSA's Exploration 1 Launch Vehicle, will fly it's return to flight mission! Launching a globeSat for IKSA as part of the GlobeSat2 mission! Watch the launch!</p><br>
+		<button onclick="window.open('https://www.youtube.com/watch?v=sTYcdf6uHnM')">Watch</button>
 	</div>
 </div>
+
 <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
