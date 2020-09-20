@@ -32,5 +32,5 @@ setInterval(updateClock, 1000)
 if (info.link != null){
 yt.src = info[0].link
 }else{
-	yt.src = null
+	yt.src = ""
 }
