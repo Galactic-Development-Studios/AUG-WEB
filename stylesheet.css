@@ -293,6 +293,6 @@ body{
   	display: none;
   }
   .homeArticleText{
-  	width: 100% !important;
+  	width: calc(92%-30px) !important;
   }
 }
